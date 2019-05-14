@@ -32,7 +32,11 @@
 
 .cart-lines-row {
 	@extend .row;
-	margin-bottom:$sc-margin-lv4;
+		margin-bottom: 20px;
+    background: #fff;
+    padding-top: 14px;
+    margin-right: 0px;
+    margin-left: 0px;
 	}
 
 .cart-lines-table-first {
@@ -69,6 +73,3 @@
 		display: none;
 	}
 }
-
-
-

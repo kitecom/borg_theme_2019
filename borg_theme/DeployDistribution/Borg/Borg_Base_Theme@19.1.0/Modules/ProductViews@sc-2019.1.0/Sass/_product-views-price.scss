@@ -8,15 +8,14 @@
 
 .product-views-price-login-to-see-prices-highlighted {
 	margin-top: $sc-margin-lv2;
-    margin-bottom: $sc-margin-lv2;
+  margin-bottom: $sc-margin-lv2;
+	padding: 0px;
 }
 .product-views-price-login-to-see-prices {
     @extend .message;
+		padding: 0px;
 }
 
 .product-views-price-message {
 	font-weight: normal;
 }
-
-
-

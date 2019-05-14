@@ -7,15 +7,14 @@
 }
 
 .cart-summary-title{
-	background:$sc-color-theme-background;
-	text-align:center;
-	padding:$sc-padding-lv4 0px $sc-padding-lv4 0px;
+	background:transparent;
+	text-align:left;
+	padding:$sc-padding-lv4 0px $sc-padding-lv4 13px;
 	margin-bottom:$sc-margin-lv4;
 	border-bottom: 1px solid $sc-color-theme-border;
 }
 
 .cart-summary-expander-container{
-	padding: $sc-padding-lv3;
 	clear:both;
 
 	.control-group {

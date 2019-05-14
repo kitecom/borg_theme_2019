@@ -13,7 +13,7 @@
 // <div class="styleguide-color-primary">sc-color-primary</div>
 //
 // Styleguide 1.1.2
-$sc-color-primary: #e23200; /* editable({"type": "color", "label": "Highlight Color", "description": "Used mainly for 'call to action' elements such as 'Buy now' buttons an highlighted elements such as the Minicart Icon."}) */
+$sc-color-primary: #cca323; /* editable({"type": "color", "label": "Highlight Color", "description": "Used mainly for 'call to action' elements such as 'Buy now' buttons an highlighted elements such as the Minicart Icon."}) */
 
 // Secondary Color
 //
@@ -23,7 +23,7 @@ $sc-color-primary: #e23200; /* editable({"type": "color", "label": "Highlight Co
 // <div class="styleguide-color-secondary">sc-color-secondary</div>
 //
 // Styleguide 1.1.3
-$sc-color-secondary: #15607b; /* editable({"type": "color", "label": "Alternate Color", "description": "Used mainly for secondary action elements such as 'Subscribe to newsletter' buttons."}) */
+$sc-color-secondary: #000; /* editable({"type": "color", "label": "Alternate Color", "description": "Used mainly for secondary action elements such as 'Subscribe to newsletter' buttons."}) */
 
 // Neutral shades
 //
@@ -75,7 +75,7 @@ $sc-neutral-shade-0: lighten($sc-neutral-shade, 100); /* editable({"type": "colo
 $sc-color-theme: #f2f2f2; /* editable({"type": "color", "label": "Theme color", "description": "This is the base theme color. If only this color is changed the rest of the theme color variants will be derived from this one using the preset theme shading definition: 900, 700, 500, 300, 100."}) */
 $sc-color-theme-main: #ffffff; /* editable({"type": "color", "label": "Shade 900"}) */
 $sc-color-theme-900: saturate(darken($sc-color-theme, 55), 18); /* editable({"type": "color", "label": "Shade 900"}) */
-$sc-color-theme-700: saturate(darken($sc-color-theme, 45), 17); /* editable({"type": "color", "label": "Shade 700"}) */
+$sc-color-theme-700: $sc-color-primary; /* editable({"type": "color", "label": "Shade 700"}) */
 $sc-color-theme-500: $sc-color-theme; /* editable({"type": "color", "label": "Shade 500"}) */
 $sc-color-theme-300: desaturate(lighten($sc-color-theme, 15), 3); /* editable({"type": "color", "label": "Shade 300"}) */
 $sc-color-theme-100: desaturate(lighten($sc-color-theme, 23), 3); /* editable({"type": "color", "label": "Shade 100"}) */
@@ -142,9 +142,9 @@ $sc-color-info-border: desaturate(lighten($sc-color-info, 60), 22);
 // <div class="styleguide-color-link-active">sc-color-link-active</div>
 //
 // Styleguide 1.1.7
-$sc-color-link: #0067b9; /* editable({"type": "color", "label": "Link"}) */
+$sc-color-link: #000; /* editable({"type": "color", "label": "Link"}) */
 $sc-color-link-hover: desaturate(lighten($sc-color-link, 15), 15); /* editable({"type": "color", "label": "Hover state"}) */
-$sc-color-link-active: #0067b9; /* editable({"type": "color", "label": "Active state"}) */
+$sc-color-link-active: #666; /* editable({"type": "color", "label": "Active state"}) */
 
 // Copy
 //

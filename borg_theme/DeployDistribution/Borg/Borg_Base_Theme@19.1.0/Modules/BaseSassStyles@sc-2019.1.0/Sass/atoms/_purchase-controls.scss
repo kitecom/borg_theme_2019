@@ -16,7 +16,7 @@ $sc-picker-border: $sc-color-theme-100;
 .filter-generic {
 	@extend small;
 	color: $sc-color-copy;
-	padding: $sc-padding-lv1 0;
+	padding: 5px 0 0;
 	display: inline-block;
 
 	&:hover {

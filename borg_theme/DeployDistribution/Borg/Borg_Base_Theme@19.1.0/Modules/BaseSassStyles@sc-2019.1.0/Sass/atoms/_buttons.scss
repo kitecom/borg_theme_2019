@@ -9,32 +9,31 @@
 // Styleguide 2.1.1
 
 .button-primary {
-	background: $sc-button-primary-background-color;
-	color: $sc-button-primary-text-color;
+	background: #000;
+	color: $sc-color-primary;
 	font-weight: $sc-font-weight-normal;
-	border: 1px solid $sc-button-primary-border-color;
-	border-radius: $sc-button-primary-border-radius;
-	text-transform: $sc-button-primary-text-transform;
+	border: 1px solid $sc-color-primary;
+	border-radius: 20px;
 	display: inline-block;
 
 	&:hover {
-		color: $sc-button-primary-hover-text-color;
-		background: $sc-button-primary-hover-background-color;
-		border-color: $sc-button-primary-hover-border-color;
+		color: #000;
+		background: $sc-color-primary;
+		border-color: $sc-color-primary;
 		text-decoration: none;
 	}
 
-	&:active, &:focus {
-		color: $sc-button-primary-active-text-color;
-		background: $sc-button-primary-active-background-color;
-		border-color: $sc-button-primary-active-border-color;
-	}
-
-	&:disabled, &-disabled {
-		cursor: default;
-		pointer-events: none;
-		opacity: 0.6;
-	}
+	// &:active, &:focus {
+	// 	color: $sc-button-primary-active-text-color;
+	// 	background: $sc-button-primary-active-background-color;
+	// 	border-color: $sc-button-primary-active-border-color;
+	// }
+	//
+	// &:disabled, &-disabled {
+	// 	cursor: default;
+	// 	pointer-events: none;
+	// 	opacity: 0.6;
+	// }
 }
 
 // Secondary buttons

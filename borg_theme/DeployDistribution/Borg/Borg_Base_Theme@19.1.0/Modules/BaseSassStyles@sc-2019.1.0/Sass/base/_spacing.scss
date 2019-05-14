@@ -17,7 +17,7 @@
 	margin-left: - ($grid-gutter-width / 2);
 	margin-right: - ($grid-gutter-width / 2);
 	margin-bottom: $sc-margin-lv4;
-	background-color: $sc-color-theme-background;
+	background-color: $sc-color-theme-main;
 
 	@media (min-width: $screen-sm-min) {
 		padding: $sc-padding-lv6;
@@ -30,7 +30,7 @@
 
 .box-column-bordered {
 	@extend .box-column;
-	border-top: 1px solid $sc-color-theme-border-light;
+	/*border-top: 1px solid $sc-color-theme-border-light;*/
 
 	@media (min-width: $screen-sm-min) {
 		border-top: 0;

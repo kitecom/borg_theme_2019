@@ -8,18 +8,15 @@
 	<div class="item-relations-related-item-price" data-view="Item.Price">
 	</div>
 
-	{{#if showRating}}
-		<div class="item-relations-related-item-rate" data-view="Global.StarRating">
-		</div>
-	{{/if}}
+
 </div>
 
 
 
 
 {{!----
-Use the following context variables when customizing this template: 
-	
+Use the following context variables when customizing this template:
+
 	itemURL (String)
 	thumbnail (Object)
 	thumbnail.url (String)

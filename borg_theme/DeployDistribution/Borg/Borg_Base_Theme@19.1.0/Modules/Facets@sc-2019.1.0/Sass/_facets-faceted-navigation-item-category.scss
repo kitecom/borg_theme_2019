@@ -25,15 +25,16 @@
 
 	padding: $sc-padding-lv3;
 }
-
-
+.facets-faceted-navigation-item-category-facet-group {
+	padding: 0px;
+}
 .facets-faceted-navigation-item-category-facet-group-title {
 	@extend .facets-faceted-navigation-facet-group-title;
 }
 
 .facets-faceted-navigation-item-category-facet-option {
 	@extend .facets-faceted-navigation-facet-option;
-
+	font-style: normal;
 }
 
 .facets-faceted-navigation-item-category-facet-option-circle {

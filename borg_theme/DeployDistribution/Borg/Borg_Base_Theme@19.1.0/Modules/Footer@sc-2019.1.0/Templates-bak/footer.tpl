@@ -32,7 +32,8 @@
                 <div class="cta-title split-main">
                     <h3 class="light">Build your business with confidence and become affiliated with a winning brand</h3>
                 </div>
-                <p><a class="btn btn-primary" href="/become-a-distributor"><span class="btn-inner"><span class="js-btn-text">Become a distributor</span></span></a></p>
+                <p><a class="btn btn-primary" href="/become-a-distributor"><span class="btn-inner"><span class="js-btn-text">Become a distributor</span><svg class="icon icon-chevron">
+                <use xlink:href="#icon-chevron"></use></svg></span></a></p>
             </div>
         </div>
     </div>
@@ -44,13 +45,8 @@
             <div class="cta-title split-main">
                 <h3 class="light">Build your business with confidence and become affiliated with a winning brand</h3>
             </div>
-            <p>
-              <a class="btn btn-primary" href="/become-a-distributor">
-                <span class="btn-inner">
-                  <span class="js-btn-text">Become a distributor</span>
-                </span>
-              </a>
-            </p>
+            <p><a class="btn btn-primary" href="/become-a-distributor"><span class="btn-inner"><span class="js-btn-text">Become a distributor</span><svg class="icon icon-chevron">
+            <use xlink:href="#icon-chevron"></use></svg></span></a></p>
         </div>
         <div class="footer grid">
             <div class="grid-item-one">
@@ -64,7 +60,7 @@
                             <div class="field js-field field-required">
                                 <label class="field-label visuallyhidden" for="fieldEmail">Cm-Yduklhh-Yduklhh</label>
                                 <div class="field-wrapper">
-                                    <input class="field-control js-field-control js-cm-email-input" id="fieldEmail" name="cm-yduklhh-yduklhh" placeholder="Your email, our newsletter" required="" type="email" value="">
+                                    <input class="field-control js-field-control js-cm-email-input" id="fieldEmail" name="cm-yduklhh-yduklhh" placeholder="Your email, our newsletter" required="" type="email" value=""><!-- <span class="field-icon field-icon-valid"><svg class="icon"><use xlink:href="#icon-tick" /></svg></span><span class="field-icon field-icon-invalid"><svg class="icon"><use xlink:href="#icon-cross" /></svg></span> -->
                                 </div>
                                 <div class="field-feedback js-field-feedback"></div>
                             </div><button aria-label="Submit" class="btn btn-inner js-cm-submit-button" type="submit">
@@ -74,7 +70,7 @@
                         <p class="footer-newsletter-footnote mille">By signing up here I agree to receive email newsletters</p>
                     </form>
             </div>
-            <div class="grid-item-two">
+            <div class="grid-item-two"> <!--MULTI LEVEL MENU -->
                     <ul class="footer-nav">
                         <li class="footer-nav-group">
                             <a class="footer-nav-heading" href="/about-us">About us</a>
@@ -247,7 +243,7 @@
                             <ul></ul>
                         </li>
                     </ul>
-            </div>
+            </div> <!--END MULTI LEVEL MENU -->
         </div>
         <div class="footer-accreditations split">
             <ul class="grid grid-bottom split-main">
@@ -258,7 +254,8 @@
                     ISO 9001, ISO 14001</p>
                 </li>
             </ul>
-            <p class="hide-portable"><a class="btn" href="/become-a-distributor"><span class="btn-inner"><span class="js-btn-text">Become a distributor</span></span></a></p>
+            <p class="hide-portable"><a class="btn" href="/become-a-distributor"><span class="btn-inner"><span class="js-btn-text">Become a distributor</span><svg class="icon icon-chevron">
+            <use xlink:href="#icon-chevron"></use></svg></span></a></p>
         </div>
         <div class="split end">
             <p class="split-main mille">© 2018 Borg &amp; Overström - All Rights Reserved</p>
@@ -266,24 +263,11 @@
         </div>
     </div>
 </footer>
-<div data-cms-area="footer_cms_area" data-cms-area-filters="global"></div>
-<div class="band band-flush cta js-cta cta-sticky">
-    <div class="container spacing-sml">
-        <div class="split">
-            <div class="cta-title split-main">
-                <h3 class="light">Build your business with confidence and become affiliated with a winning brand</h3>
-            </div>
-            <p><a class="btn btn-primary" href="/become-a-distributor"><span class="btn-inner"><span class="js-btn-text">Become a distributor</span></span></a></p>
-        </div>
-    </div>
-</div>
+
 <script type="text/javascript">
  ;(function ($, window, document, undefined) {
-
-
     if ($('.js-cta').length) {
         var $cta = $('.js-cta').clone().addClass('cta-sticky').appendTo('body');
-
         $(window).scroll(function() {
             var stickThreshold = $(window).height() * 0.95,
             passThreshold = $('.js-cta-threshold').offset().top - $(window).height() + $('.js-cta-threshold').height();
@@ -292,9 +276,8 @@
             .toggleClass('is-passed', $(window).scrollTop() > passThreshold);
         });
     }
-
-})(jQuery, window, document);
-
+})
+(jQuery, window, document);
 </script>
 
 {{!----

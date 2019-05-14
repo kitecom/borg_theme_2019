@@ -14,16 +14,17 @@
 			</div>
 		{{/if}}
 	</div>
-	
+
 	<div class="facets-item-cell-grid-details">
 		<a class="facets-item-cell-grid-title" href="{{url}}">
 			<span itemprop="name">{{name}}</span>
+			<span class="plp-sku" itemprop="name">{{sku}}</span>
 		</a>
 
 		<div class="facets-item-cell-grid-price" data-view="ItemViews.Price">
 		</div>
 
-		
+
 
 		<div data-view="ItemDetails.Options"></div>
 

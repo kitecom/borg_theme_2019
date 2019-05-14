@@ -17,7 +17,7 @@
 .login-register-login-submit {
 	@extend .button-large;
 	@extend .button-primary;
-	background: #$sc-color-primary;
+	background: $sc-color-primary;
 }
 
 .login-register-login-forgot {

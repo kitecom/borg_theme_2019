@@ -39,22 +39,37 @@
 					<p class="product-details-full-content-header-title" itemprop="name">1{{model.item.displayname}}</p>
 					<p class="product-details-full-content-header-title" itemprop="name">2{{model.item.storedescription}}</p>
 
-					{{#unless model.item.custitem_sca_is_matrix}}
+					{{#if model.item.custitem_sca_is_matrix}}
+					&nbsp;
+					{{else}}
 						<div class="attributes">
-							<div class="product-details-full-content-store-facet-colour">
-								<span>Colour: </span>{{model.item.custitem_facet_colour}}
+						{{#if model.item.custitem_facet_acc_type}}
+							<div class="product-details-full-content-store-facet-acc-type">
+								<span>Accessory Type: </span>{{model.item.custitem_facet_acc_type}}
 							</div>
+						{{/if}}
+						{{#if model.item.custitem_facet_part_type}}
+							<div class="product-details-full-content-store-facet-part-type">
+								Part Type: <span class="product-details-full-content-store-facet-part-type-value">{{model.item.custitem_facet_part_type}}</span>
+							</div>
+						{{/if}}
+						{{#if model.item.custitem_facet_compatibility}}
 							<div class="product-details-full-content-store-facet-compat">
 								<span>Compatibilty: </span>{{model.item.custitem_facet_compatibility}}
 							</div>
-							<div class="product-details-full-content-store-facet-type">
-								<span>Part Type: </span>{{model.item.custitem_facet_part_type}}
-							</div>
+						{{/if}}
+						{{#if model.item.custitem_facet_colour}}
+								<div class="product-details-full-content-store-facet-colour">
+									<span>Colour: </span>{{model.item.custitem_facet_colour}}
+								</div>
+						{{/if}}
+						{{#if model.item.custitem_facet_brand}}
 							<div class="product-details-full-content-store-facet-brand">
 								<span>Brand: </span>{{model.item.custitem_facet_brand}}
 							</div>
+						{{/if}}
 						</div>
-					{{/unless}}
+					{{/if}}
 					<div data-cms-area="item_info" data-cms-area-filters="path"></div>
 				</div>
 			<div class="product-details-full-divider"></div>
@@ -144,6 +159,8 @@
 		$( ".custcol_io_water_sys" ).appendTo( ".custcol_io_water_sys_header" );
 		$( ".custitembo_mx_disp_opts" ).appendTo( ".custitembo_mx_disp_opts" );
 		$( ".custitem_bo_mx_colour" ).appendTo( ".custitem_bo_mx_colour_header" );
+
+		$('.product-details-full-content-store-facet-part-type-value:contains("&nbsp;")').parent('div').hide()
 </script>
 {{!----
 Use the following context variables when customizing this template:

@@ -202,7 +202,9 @@
                     "Modules/StoreLocator@sc-2019.1.0/Templates/store_locator_upgrade.tpl",
                     "Modules/SC.CCT.Html@sc-2019.1.0/Templates/sc_cct_html.tpl",
                     "Modules/SiteSearch@sc-2019.1.0/Templates/site_search.tpl",
-                    "Modules/SiteSearch@sc-2019.1.0/Templates/site_search_button.tpl"
+                    "Modules/SiteSearch@sc-2019.1.0/Templates/site_search_button.tpl",
+                    "Modules/Footer@sc-2019.1.0/Templates-bak/footer_simplified.tpl",
+                    "Modules/Footer@sc-2019.1.0/Templates-bak/footer.tpl"
                 ]
             },
             "myaccount": {
@@ -488,7 +490,9 @@
                     "Modules/StoreLocatorAccessPoints@sc-2019.1.0/Templates/storelocator_accesspoints_headerlink.tpl",
                     "Modules/SC.CCT.Html@sc-2019.1.0/Templates/sc_cct_html.tpl",
                     "Modules/SiteSearch@sc-2019.1.0/Templates/site_search.tpl",
-                    "Modules/SiteSearch@sc-2019.1.0/Templates/site_search_button.tpl"
+                    "Modules/SiteSearch@sc-2019.1.0/Templates/site_search_button.tpl",
+                    "Modules/Footer@sc-2019.1.0/Templates-bak/footer_simplified.tpl",
+                    "Modules/Footer@sc-2019.1.0/Templates-bak/footer.tpl"
                 ]
             },
             "checkout": {
@@ -740,7 +744,9 @@
                     "Modules/StoreLocator@sc-2019.1.0/Templates/store_locator_upgrade.tpl",
                     "Modules/SC.CCT.Html@sc-2019.1.0/Templates/sc_cct_html.tpl",
                     "Modules/SiteSearch@sc-2019.1.0/Templates/site_search.tpl",
-                    "Modules/SiteSearch@sc-2019.1.0/Templates/site_search_button.tpl"
+                    "Modules/SiteSearch@sc-2019.1.0/Templates/site_search_button.tpl",
+                    "Modules/Footer@sc-2019.1.0/Templates-bak/footer_simplified.tpl",
+                    "Modules/Footer@sc-2019.1.0/Templates-bak/footer.tpl"
                 ]
             }
         }
@@ -1215,7 +1221,9 @@
             "Modules/OrderWizard.Module.Package@sc-2019.1.0/Sass/_order-wizard-msr-package-details.scss",
             "Modules/OrderWizard.Module.Package@sc-2019.1.0/Sass/_order-wizard-msr-package-list.scss",
             "Modules/OrderWizard.Module.MultiShipTo.EnableLink@sc-2019.1.0/Sass/_order-wizard-msr-enablelink-module.scss",
-            "Modules/OrderWizard.Module.MultiShipTo.EnableLink@sc-2019.1.0/Sass/_order-wizard-msr-removed-promocodes.scss"
+            "Modules/OrderWizard.Module.MultiShipTo.EnableLink@sc-2019.1.0/Sass/_order-wizard-msr-removed-promocodes.scss",
+            "Modules/Footer@sc-2019.1.0/Sass-bak/_footer-simplified.scss",
+            "Modules/Footer@sc-2019.1.0/Sass-bak/_footer.scss"
         ]
     },
     "assets": {
