@@ -1,0 +1,26 @@
+.global-views-format-payment-method {
+	font-size:$sc-font-size-m;
+}
+
+.global-views-format-payment-method-header-icon {
+	@extend .creditcard-header-icon;
+}
+
+.global-views-format-payment-method-street-value{
+	@extend .sc-value;
+}
+
+.global-views-format-payment-method-zip-value{
+	@extend .sc-value;
+}
+
+
+.global-views-format-payment-method-number {
+	@extend .creditcard-number;
+}
+
+
+
+
+
+

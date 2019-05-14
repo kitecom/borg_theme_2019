@@ -1,0 +1,14 @@
+{
+  "generator-extension": {
+    "promptValues": {
+      "vendor": "Borg"
+    },
+    "ext_application": {
+      "BorgAccountMenu": [
+        "shopping",
+        "myaccount",
+        "checkout"
+      ]
+    }
+  }
+}

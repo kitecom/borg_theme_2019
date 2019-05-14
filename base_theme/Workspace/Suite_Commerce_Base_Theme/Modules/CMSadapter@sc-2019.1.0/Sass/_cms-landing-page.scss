@@ -1,0 +1,21 @@
+.cms-landing-page {	
+  @extend .container;
+}
+.cms-landing-page-row {
+	@extend .row; 
+}
+.cms-landing-page-row-full-col {
+	@extend .col-md-12; 
+}
+.cms-landing-page-half-col {
+	@extend .col-md-6;
+	@extend .col-sm-6;
+}
+.cms-landing-page-quarter-col {
+	@extend .col-md-3;
+	@extend .col-sm-3; 
+}
+.cms-landing-page-three-quarter-col {
+	@extend .col-md-9;
+	@extend .col-sm-9; 
+}

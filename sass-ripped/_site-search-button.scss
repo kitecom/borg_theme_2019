@@ -1,0 +1,61 @@
+//header search	
+
+.site-search-button-link {
+	margin-right: 0;
+	cursor: pointer;
+	background: none;
+
+	@media (max-width: $screen-sm-min) {
+		display: block;
+		height: $sc-target-size;
+		color: $sc-color-theme-700;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+	}
+
+	@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+		margin-right: $sc-margin-lv2;
+	}
+
+	@media (min-width: $screen-md-min) {
+		font-size: $sc-font-size-xl;
+		background: none;
+		padding: $sc-padding-lv2;
+		color: $sc-color-secondary;
+		cursor: pointer;
+		position: relative;
+		line-height: 34px;
+	}
+}
+.site-search-button-link:hover {
+	color: $sc-color-copy;
+	@media (min-width: $screen-md-min) {
+		color: $sc-color-theme-500;
+	}
+}
+.site-search-button-link.active {
+	background: $sc-color-theme-background;
+	color: $sc-color-copy-dark;
+
+	@media (min-width: $screen-md-min) {
+		color: $sc-color-copy;
+	}
+}
+
+.site-search-button-icon {
+	@extend .fa;
+	@extend %fa-search;
+
+	color: $sc-color-secondary;
+	font-size: $sc-font-size-l;
+	
+	@media (max-width: $screen-sm-min) {
+		line-height: $sc-target-size;
+		min-width: $sc-target-size;
+	}
+
+	@media (min-width: $screen-md-min) {
+		font-size: $sc-font-size-xxl;
+	}
+}

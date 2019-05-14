@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "cms.contentWait": {
+            "group": "integrations",
+            "subtab": "cms",
+            "type": "integer",
+            "title": "Time to wait for CMS content (ms)",
+            "description": "Enter the maximum time, in milliseconds, that SuiteCommerce waits for CMS content to render. If this maximum time is exceeded, the app renders then CMS content renders later. You might also have a flickering problem.",
+            "default": 200
+        }
+    }
+}

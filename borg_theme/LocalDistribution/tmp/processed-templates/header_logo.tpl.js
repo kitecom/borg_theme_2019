@@ -1,0 +1,7 @@
+define('header_logo.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
+    var helper;
+
+  return "<div id=\"site-logo\" class=\"content-banner\"></div>\n\n<a class=\"header-logo\" href=\"http://www.borgandoverstrom.com\" width=\"196\" height=\"34\" alt=\"Borg &amp; Overström\" title=\""
+    + container.escapeExpression(((helper = (helper = compilerNameLookup(helpers,"headerLinkTitle") || (depth0 != null ? compilerNameLookup(depth0,"headerLinkTitle") : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"headerLinkTitle","hash":{},"data":data}) : helper)))
+    + "\">\n  <img src=\"https://staging.borgandoverstrom.com/site/svg.logo.svg\"/>\n</a>\n\n\n\n\n";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'header_logo'; return template;});

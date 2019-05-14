@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+/* eslint no-var: 0, no-process-exit: 0 */
+
+var chalk = require('chalk');
+var entry = require(require('path').join(__dirname, '..', 'lib', 'cli'));
+
+entry(process.argv)
+  .then(function(exitCode) {
+    process.exit(exitCode);
+  })
+  .catch(function(err) {
+    console.log(chalk.red(err.toString()));
+    process.exit(1);
+  });

@@ -1,0 +1,28 @@
+{
+	"type": "object",
+	"subtab": {
+		"id": "quickOrder",
+		"title": "Quick Order",
+		"description": "Quick Order configuration",
+		"group": "shoppingApplication",
+      	"docRef": "section_1530554948"
+	},
+	"properties": {
+		"quickOrder.showHyperlink": {
+			"group": "shoppingApplication",
+			"subtab": "quickOrder",
+			"type": "boolean",
+			"title": "Show 'Quick Order' hyperlink",
+			"description": "Check this box to enable the Quick Order hyperlink.",
+			"default": true
+		},
+		"quickOrder.textHyperlink": {
+			"group": "shoppingApplication",
+			"subtab": "quickOrder",
+			"type": "string",
+			"title": "Hyperlink text",
+			"description": "Enter the text you want to use for the Quick Order hyperlink.",
+			"default": "Quick Order"
+		}
+	}
+}

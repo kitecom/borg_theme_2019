@@ -1,0 +1,32 @@
+.overview-shipping-header {
+  display: inline-block;
+}
+.overview-shipping-header h4 {
+  margin: $sc-margin-lv2 0;
+}
+.overview-shipping-card {
+  @extend .info-card;
+  width: 100%;
+}
+.overview-shipping-card .address-details {
+  border: 0;
+
+  .address-details-container {
+    padding: 0;
+  }
+}
+.overview-shipping-card-content {
+	@media (min-width: $screen-sm-min) {
+		min-height: 180px;
+    overflow: auto;
+	}
+}
+.overview-shipping-card-button-edit {
+  @extend .button-link;
+  margin-top: $sc-margin-lv3;
+}
+
+.overview-shipping-card-button-edit-container {
+  display: block;
+  text-align: right;
+}

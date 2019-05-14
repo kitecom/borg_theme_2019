@@ -1,0 +1,32 @@
+.main, .layout-container {
+	min-height: 100%;
+	height: auto;
+	width: 100%;
+}
+
+%sc-layout {
+	min-height: 100%;
+}
+
+
+
+.layout-overlay{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+}
+
+.cms-content ul, .cms-content ol {
+	margin-left: $sc-margin-lv4;
+}
+
+.cms-content ul li {
+	list-style: circle;
+}
+
+.cms-content ol li {
+	list-style: decimal;
+}

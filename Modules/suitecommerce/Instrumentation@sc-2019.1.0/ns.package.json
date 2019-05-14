@@ -1,0 +1,19 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*.js"
+        ],
+        "ssp-libraries": [
+            "SuiteScript/*.js"
+        ],
+        "unit-test-files": [
+            "Tests/*.js"
+        ],
+        "unit-test-entry-point": [
+            "Tests/UnitTest.Logger.js"
+        ],
+        "configuration": [
+            "Configuration/*.json"
+        ]
+    }
+}

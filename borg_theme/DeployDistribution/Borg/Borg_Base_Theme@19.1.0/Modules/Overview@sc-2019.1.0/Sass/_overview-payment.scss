@@ -1,0 +1,36 @@
+.overview-payment-header {
+    @extend .overview-shipping-header;
+}
+.overview-payment-header h4 {
+    margin: $sc-margin-lv2 0;
+}
+.overview-payment-card {
+   	@extend .overview-shipping-card;
+}
+.overview-payment-card .creditcard {
+	@extend .overview-shipping-card-content;
+
+	margin: 0;
+	border: none;
+
+	.creditcard-container {
+		padding: 0;
+		border: 0;
+	}
+}
+
+.overview-payment-card-button-edit {
+    @extend .overview-shipping-card-button-edit;
+}
+.overview-payment-card-content {
+	@extend .overview-shipping-card-content;
+	@extend .info-card;
+	width: 100%;
+	border: none;
+	padding: 0px;
+}
+
+.overview-payment-card-button-edit-container {
+	display: block;
+	text-align: right;
+}

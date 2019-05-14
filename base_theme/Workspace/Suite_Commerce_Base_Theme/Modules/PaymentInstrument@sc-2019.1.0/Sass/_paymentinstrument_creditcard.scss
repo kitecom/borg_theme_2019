@@ -1,0 +1,173 @@
+$credit-card-height: 230px;
+$credit-card-height-offset: 20px;
+
+.paymentinstrument-creditcard {
+    @extend .col-lg-4;
+    @extend .col-sm-6;
+    @extend .address-card-container;
+    margin-bottom: $sc-margin-lv4;
+}
+
+.paymentinstrument-creditcard-require-field {
+    margin-bottom: $sc-margin-lv4;
+    margin-top: $sc-margin-lv2;
+    display: inline-block;
+}
+
+.paymentinstrument-creditcard-number {
+    display: inline-block;
+}
+
+.paymentinstrument-creditcard-required {
+    @extend .input-required
+}
+
+.overview-payment .paymentinstrument-creditcard,
+.order-wizard-paymentmethod-paymentinstrument-creditcard-module .paymentinstrument-creditcard {
+    width: 100%;
+    padding: 0;
+}
+
+.paymentinstrument-creditcard-content {
+    width: 100%;
+
+    @media(min-width: $screen-sm-min) {
+        min-height: $credit-card-height + $credit-card-height-offset;
+    }
+}
+
+.paymentinstrument-creditcard-list .paymentinstrument-creditcard-content,
+.paymentinstrument-creditcard-module-list-placeholder .paymentinstrument-creditcard-content {
+    @extend .info-card;
+
+    @media(min-width: $screen-sm-min) {
+        min-height: $credit-card-height + $credit-card-height-offset;
+    }
+}
+
+.paymentinstrument-creditcard-section {
+    @extend .col-xs-12;
+    margin-bottom:$sc-margin-lv2;
+    padding: 0;
+}
+
+.paymentinstrument-creditcard-security-code-section {
+    @extend .col-xs-12;
+    padding: 0;
+}
+
+.paymentinstrument-creditcard-header-icon {
+    float: right;
+    margin-right: $sc-margin-lv1;
+    width:auto;
+    height:$sc-target-size-mobile;
+}
+
+.paymentinstrument-creditcard-default {
+    @extend .address-details-default-billing;
+}
+
+.paymentinstrument-creditcard-default-icon {
+    @extend .address-details-default-shipping-icon;
+}
+
+.paymentinstrument-creditcard-actions {
+    clear: both;
+    margin-top: $sc-margin-lv3;
+    text-align: right;
+}
+
+.paymentinstrument-creditcard-edit-form-button-edit {
+    @extend .button-tertiary;
+    @extend .button-small;
+    margin-left: 0;
+    text-align: center;
+    margin-right:$sc-margin-lv2;
+
+    @media (min-width: $screen-xs-min) and (max-width: $screen-lg-min)  {
+        margin-bottom:$sc-margin-lv2;
+    }
+}
+
+.paymentinstrument-creditcard-use-this-card-button {
+    @extend .button-primary;
+    @extend .button-medium;
+    @extend .button-generic;
+    margin-top:$sc-margin-lv2;
+    margin-bottom:$sc-margin-lv2;
+
+    @media (min-width: $screen-sm-min) {
+        margin-bottom:0px;
+    }
+}
+
+.paymentinstrument-creditcard-edit-form {
+    clear:both;
+}
+
+.paymentinstrument-creditcard-edit-form-button-remove {
+    @extend .button-tertiary;
+    @extend .button-small;
+}
+
+.paymentinstrument-creditcard-name {
+    margin-bottom:$sc-margin-lv2;
+}
+
+// checkout specific (hide back to myaccount btn)
+.checkout-layout ~ .modal-container .paymentinstrument-creditcard-edit-back {
+    display: none;
+}
+
+.paymentinstrument-creditcard-new-card {
+    @extend .new-address-card-container;
+    height: 154px;
+}
+
+.paymentinstrument-creditcard-new-card-title {
+    display: inline-block;
+    margin-top: 20px;
+    color: $sc-neutral-shade-300;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.paymentinstrument-creditcard-action {
+    @extend .button-link;
+}
+
+.paymentinstrument-creditcard-container {
+    padding: $sc-padding-lv2 $sc-padding-lv3;
+}
+
+.paymentinstrument-creditcard-selector {
+    @extend .address-card-container;
+    cursor: pointer;
+    border-bottom: 0px;
+    padding: $sc-padding-lv3;
+}
+
+.paymentinstrument-creditcard-selected {
+    background-color: $sc-neutral-shade-0;
+}
+
+.paymentinstrument-creditcard-selector-option {
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.paymentinstrument-creditcard-new-card-plus-icon {
+    @extend .icon-plus;
+    font-size: 2.5rem;
+    color: $sc-color-theme-500;
+}
+
+.overview-payment-card {
+    .paymentinstrument-creditcard-selected {        
+        min-height: 160px;
+        border: none;
+    }
+    .paymentinstrument-creditcard-container {
+        padding: 0px;
+    }
+}

@@ -1,0 +1,31 @@
+.facets-items-collection-view-row {
+	width: 850px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+.facets-items-collection-view-row .facets-items-collection-view-cell-span4:nth-of-type(1) {
+	background: green;
+}
+.facets-items-collection-view-row .facets-items-collection-view-cell-span4:nth-of-type(2) {
+	background: yellow;
+}
+.facets-items-collection-view-row .facets-items-collection-view-cell-span4:nth-of-type(3) {
+	background: red;
+}
+
+.facets-items-collection-view-cell-span4 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: space-between;
+	flex-basis: auto;
+}
+.facets-item-cell-grid-link-image img {
+	max-width: 100%;
+	height: auto;
+}
+
+<script>
+$( ".facets-facet-browse" ).last().addClass( "models" );
+</script>

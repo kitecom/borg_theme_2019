@@ -1,0 +1,42 @@
+.paymentinstrument-creditcard-edit-button-back {
+    @extend .button-back;
+}
+
+.paymentinstrument-creditcard-edit-button-back-icon {
+    @extend .button-back-icon;
+}
+
+.paymentinstrument-creditcard-edit {
+    @extend .address-edit;
+}
+
+.paymentinstrument-creditcard-edit-form-button-submit {
+    @extend .address-edit-form-button-submit;
+    margin: $sc-margin-lv3 0 0;
+}
+
+.paymentinstrument-creditcard-edit-form-button-cancel {
+    @extend .address-edit-form-button-cancel;
+}
+
+.paymentinstrument-creditcard-edit-form-button-reset {
+    @extend .address-edit-form-button-reset;
+}
+
+//Modal CreditCardDetailsView
+.global-views-modal-content .global-views-modal-content-body {
+
+    .paymentinstrument-creditcard-edit {
+        background: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.paymentinstrument-creditcard-edit-card-selected {
+    opacity:1;
+}
+
+.paymentinstrument-creditcard-edit-card-no-selected {
+    opacity:0.1;
+}

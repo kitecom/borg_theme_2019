@@ -1,0 +1,18 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.<%= sass_class_name %>-info-card {
+    @extend .info-card;
+}
+
+.<%= sass_class_name %>-info-card-content {
+    @extend .info-card-content;
+    color: $sc-color-secondary;
+    font-weight: bold;
+}

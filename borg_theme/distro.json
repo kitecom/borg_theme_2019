@@ -1,0 +1,17 @@
+{
+    "name": "ThemeDevelopmentTools-19.1.0",
+    "version": "2.0",
+    "buildToolsVersion": "sc-2019.1.0",
+    "folders": {
+        "modules": "Modules",
+        "suitecommerceModules": "Modules/suitecommerce",
+        "distribution": "LocalDistribution",
+        "deploy": "DeployDistribution"
+    },
+    "modules": {},
+    "tasksConfig": {},
+    "license": {
+        "text": ""
+    },
+    "unbuild": {}
+}

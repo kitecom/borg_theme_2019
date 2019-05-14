@@ -1,0 +1,27 @@
+.header-logo {
+	display: block;
+	width: 196px;
+	/*line-height: $sc-main-nav-height;
+	height: $sc-main-nav-height;
+	margin-left:-$sc-margin-lv2;*/
+
+	@media (max-width: $screen-xs-min) {
+		width: 196px;
+	}
+
+	@media (min-width: $screen-sm-min) {
+		width: 196px;
+		margin:0px;
+	}
+}
+
+.header-logo-image {
+	width: 100%;
+	/*max-width: 115px;
+	max-height: 50px;
+	vertical-align: middle;*/
+
+	@media (min-width: $screen-md-min) {
+		width: auto;
+	}
+}

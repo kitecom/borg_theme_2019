@@ -1,0 +1,32 @@
+<%/*
+	© 2019 NetSuite Inc.
+	User may not copy, modify, distribute, or re-bundle or otherwise make available this code;
+	provided, however, if you are an authorized user with a NetSuite account or log-in, you
+	may use this code subject to the terms that govern your access and use.
+*/%><%
+var Configuration = require('Configuration')
+,	Utils = require('Utils');
+
+response.setCDNCacheable(response.CACHE_DURATION_SHORT);
+response.setContentType('JAVASCRIPT');
+
+if (Configuration.get().categories) { %>
+	SC.CATEGORIES = <%= JSON.stringify(require('Categories.Model').getCategoryTree(Configuration.get().categories.menuLevel)) %>;
+<% } %>
+
+<%
+// The use of CDS and CMS are mutually exclusive, if you use CMS you can't use CDS, or if you use CDS you can't use CMS
+if (Configuration.get().cms.useCMS)
+{
+	try
+	{
+		var baseUrl = Utils.trim(Configuration.get().cms.baseUrl || '') || request.getURL().match(/(^https?:\/\/[^\/]+)/i)[0];
+		var CMS = require('CMSadapter.Model').getPages(baseUrl);
+		// CMS configuration %>
+			SC.ENVIRONMENT.CMS = <%= JSON.stringify(CMS || {}) %>;
+	<% }
+	catch(e)
+	{
+		console.warn('CMS could not be loaded, reason: ' + JSON.stringify(e));
+	}
+} %>

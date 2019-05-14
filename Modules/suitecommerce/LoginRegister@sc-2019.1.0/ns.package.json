@@ -1,0 +1,22 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ],
+        "sass": [
+            "Sass/**/*.scss"
+        ],
+        "images": [
+            "Images/*"
+        ],
+        "templates": [
+            "Templates/*"
+        ],
+        "unit-test-files": [
+            "Tests/*.js"
+        ],
+        "unit-test-entry-point": [
+            "Tests/UnitTest.LoginRegister.js"
+        ]
+    }
+}

@@ -1,0 +1,84 @@
+{
+	"properties": {
+		"transactionListColumns.invoiceOpen": {
+			"group": "myAccountApp",
+			"subtab": "transactionListColumns",
+			"type": "array",
+			"title": "Transaction list columns Open Invoices",
+			"description": "Use these fields to assign custom column headings for My Account > Billing > Invoices > Open.",
+			"items": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string",
+						"title": "ID",
+						"description": "Enter the Field ID of the field you want to render. Valid values: duedate, trandate, and amount."
+					},
+					"label": {
+						"type": "string",
+						"title": "Label",
+						"description": "Enter the title you want to use for this column."
+					}
+				}
+			},
+			"default": [
+				{
+					"id": "duedate",
+					"label": "Due Date"
+				},
+				{
+					"id": "trandate",
+					"label": "Date"
+				},
+				{
+					"id": "amount",
+					"label": "Amount"
+				}
+			]
+		},
+		"transactionListColumns.invoicePaid": {
+			"group": "myAccountApp",
+			"subtab": "transactionListColumns",
+			"type": "array",
+			"title": "Transaction list columns Paid Invoices",
+			"description": "Use these fields to assign custom column headings for My Account > Billing > Invoices > Paid in Full.",
+			"items": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string",
+						"title": "ID",
+						"description": "Enter the Field ID of the field you want to render. Valid values: trandate, closedate, and amount."
+					},
+					"label": {
+						"type": "string",
+						"title": "Label",
+						"description": "Enter the title you want to use for this column."
+					}
+				}
+			},
+			"default": [
+				{
+					"id": "trandate",
+					"label": "Date"
+				},
+				{
+					"id": "closedate",
+					"label": "Close Date"
+				},
+				{
+					"id": "amount",
+					"label": "Amount"
+				}
+			]
+		},
+		"transactionListColumns.enableInvoice": {
+			"group": "myAccountApp",
+			"subtab": "transactionListColumns",
+			"type": "boolean",
+			"title": "Enable Invoices columns management",
+			"description": "Check this box to enable Invoice Columns Management.",
+			"default": false
+		}
+	}
+}

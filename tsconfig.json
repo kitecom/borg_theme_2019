@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "checkJs": true
+    },
+    "include": [
+        "Modules/suitecommerce/**/*.js",
+        "Modules/extensions/**/*.js"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/node_modules/*"
+    ]
+}
