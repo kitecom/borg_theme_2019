@@ -1,0 +1,123 @@
+{
+	"name": "CustomFields",
+	"fantasyName": "Custom Fields",
+	"vendor": "SuiteCommerce",
+	"version": "1.1.1",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "Add custom fields to the Checkout application",
+	"skins": [],
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/Checkout.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/Checkout/Configuration/Checkout.json",
+			"Modules/PDP/Configuration/PDP.json"
+		]
+	},
+	"sass": {
+		"entry_points": {
+			"checkout": "Modules/Main/Sass/_customfields-main.scss",
+			"shopping": "Modules/Main/Sass/_customfields-main.scss"
+		},
+		"files": [
+			"Modules/Main/Sass/_customfields-main.scss",
+			"Modules/Checkout/Sass/_checkout.scss",
+			"Modules/Checkout/Sass/_checkout-field.scss",
+			"Modules/Checkout/Sass/_checkout-group.scss",
+			"Modules/Checkout/Sass/_checkout-order-wizard.scss",
+			"Modules/PDP/Sass/_pdp.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/Checkout/Templates/suitecommerce_customfields_checkout_field.tpl",
+					"Modules/Checkout/Templates/suitecommerce_customfields_checkout_group.tpl",
+					"Modules/Checkout/Templates/suitecommerce_customfields_checkout_order_wizard_module.tpl",
+					"Modules/PDP/Templates/suitecommerce_customfields_pdp_field.tpl",
+					"Modules/Checkout/Templates/suitecommerce_customfields_checkout_field_checkbox.tpl"
+				]
+			},
+			"shopping": {
+				"files": [
+					"Modules/PDP/Templates/suitecommerce_customfields_pdp_field.tpl",
+					"Modules/Checkout/Templates/suitecommerce_customfields_checkout_field_checkbox.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/Main/JavaScript/SuiteCommerce.CustomFields.Checkout.Main.js",
+			"shopping": "Modules/Main/JavaScript/SuiteCommerce.CustomFields.PDP.Main.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/SuiteCommerce.CustomFields.Checkout.Main.js",
+					"Modules/Main/JavaScript/Utils.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js",
+					"Modules/Checkout/JavaScript/Checkout.Data.js",
+					"Modules/Checkout/JavaScript/Checkout.Field.Collection.js",
+					"Modules/Checkout/JavaScript/Checkout.Field.Model.js",
+					"Modules/Checkout/JavaScript/Checkout.Field.View.js",
+					"Modules/Checkout/JavaScript/Checkout.Group.Model.js",
+					"Modules/Checkout/JavaScript/Checkout.Configuration.js",
+					"Modules/Checkout/JavaScript/Checkout.js",
+					"Modules/Checkout/JavaScript/Checkout.Helper.js",
+					"Modules/Checkout/JavaScript/Checkout.Group.View.js",
+					"Modules/Checkout/JavaScript/Checkout.OrderWizardModule.View.js",
+					"Modules/Checkout/JavaScript/Checkout.Configuration.js",
+					"Modules/Checkout/JavaScript/Checkout.Configuration.js",
+					"Modules/Checkout/JavaScript/Checkout.Setup.js",
+					"Modules/Checkout/JavaScript/Checkout.Setup.Validation.js",
+					"Modules/Checkout/JavaScript/Checkout.Types.js"
+				]
+			},
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/SuiteCommerce.CustomFields.PDP.Main.js",
+					"Modules/Main/JavaScript/Utils.js",
+					"Modules/PDP/JavaScript/PDP.js",
+					"Modules/PDP/JavaScript/PDP.Configuration.js",
+					"Modules/PDP/JavaScript/PDP.Main.View.js",
+					"Modules/PDP/JavaScript/PDP.Model.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/Main/SuiteScript/SuiteCommerce.CustomFields.Main.js",
+		"files": [
+			"Modules/Main/SuiteScript/SuiteCommerce.CustomFields.Main.js",
+			"Modules/Checkout/SuiteScript/Checkout.ServiceController.js",
+			"Modules/Checkout/SuiteScript/Checkout.Model.js",
+			"Modules/Checkout/SuiteScript/Checkout.js",
+			"Modules/Checkout/SuiteScript/Checkout.Data.js",
+			"Modules/Checkout/SuiteScript/Checkout.Helper.js"
+		]
+	},
+	"local_folder": "Workspace/CustomFields",
+	"path": "SuiteBundles/Bundle 269415/extensions/SuiteCommerce/CustomFields@1.1.1",
+	"activation_id": "2",
+	"extension_id": "1101"
+}

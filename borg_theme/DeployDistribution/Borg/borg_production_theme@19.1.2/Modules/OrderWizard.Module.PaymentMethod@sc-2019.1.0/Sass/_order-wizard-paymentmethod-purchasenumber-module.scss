@@ -1,0 +1,39 @@
+.order-wizard-paymentmethod-purchasenumber-module {
+	@extend .box-column;
+	overflow:hidden;
+    margin-top: -20px;
+    margin-bottom: -22px;
+    position: relative;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-purchase-order-value {
+	@extend .input-large;
+	margin-bottom: 0px;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-purchase-order-label {
+	@extend .sc-value;
+	display: block;
+	margin-bottom: $sc-margin-lv1;
+	font-size: $sc-font-size-m;
+	font-weight: $sc-font-weight-semibold;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-row {
+	@extend .clearfix;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-purchase-order-optional {
+	@extend .input-optional;
+	font-weight: $sc-font-weight-normal;
+}
+
+.order-wizard-paymentmethod-purchasenumber-module-title {
+	margin-bottom: $sc-margin-lv2;
+	display: none;
+}
+.order-wizard-paymentmethod-purchasenumber-module-purchase-order-label {
+	margin-bottom: 0px;
+}

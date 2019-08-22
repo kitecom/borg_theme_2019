@@ -8,8 +8,8 @@ define('quantity_pricing.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], f
     + "\" data-toggle=\"collapse\" data-target=\"#expander-body-container-"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"itemKey") || (depth0 != null ? compilerNameLookup(depth0,"itemKey") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"itemKey","hash":{},"data":data}) : helper)))
     + "\" aria-expanded=\"true\" aria-controls=\"expander-body\" data-action=\"toggle\">\n				 		"
-    + alias4((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Quantity discounts available",{"name":"translate","hash":{},"data":data}))
-    + " <i class=\"quantity-pricing-expander-toggle-icon\"></i>\n				 	</a>\n				</div>\n			<div class=\"quantity-pricing-expander-body collapse "
+    + alias4((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Quantity based pricing available on this item",{"name":"translate","hash":{},"data":data}))
+    + " \n				 	</a>\n				</div>\n			<div class=\"quantity-pricing-expander-body collapse "
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isOpen") : depth0),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\" data-nonprefix='true' id=\"expander-body-container-"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"itemKey") || (depth0 != null ? compilerNameLookup(depth0,"itemKey") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"itemKey","hash":{},"data":data}) : helper)))
@@ -72,4 +72,4 @@ define('quantity_pricing.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], f
     + "</th>\n							</tr>\n						</thead>\n						<tbody>\n"
     + ((stack1 = compilerNameLookup(helpers,"each").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"priceSchedule") : depth0),{"name":"each","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "						</tbody>\n					</table>\n				</div>\n				<!-- /content -->\n			</div>\n		</div>\n	</div>\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'quantity_pricing'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'quantity_pricing'; return template;});

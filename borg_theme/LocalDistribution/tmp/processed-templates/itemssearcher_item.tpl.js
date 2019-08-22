@@ -3,13 +3,13 @@ define('itemssearcher_item.tpl', ['Handlebars','Handlebars.CompilerNameLookup'],
 
   return "	<a class=\"itemssearcher-item-results\" data-hashtag=\""
     + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"_url") : stack1), depth0))
-    + "\" data-touchpoint=\"home\">\n	    <div class=\"itemssearcher-item-results-image\">\n	        <img data-loader=\"false\" class=\"typeahead-image\" src=\""
+    + "\" data-touchpoint=\"home\">\n	    <!--div class=\"itemssearcher-item-results-image\">\n	        <img data-loader=\"false\" class=\"typeahead-image\" src=\""
     + alias2((compilerNameLookup(helpers,"resizeImage") || (depth0 && compilerNameLookup(depth0,"resizeImage")) || alias4).call(alias3,((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"_thumbnail") : stack1)) != null ? compilerNameLookup(stack1,"url") : stack1),"thumbnail",{"name":"resizeImage","hash":{},"data":data}))
     + "\" alt=\""
     + alias2(alias1(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"_thumbnail") : stack1)) != null ? compilerNameLookup(stack1,"altimagetext") : stack1), depth0))
-    + "\">\n	    </div>\n	    <div class=\"itemssearcher-item-results-content\">\n	        <div class=\"itemssearcher-item-results-title\">\n	            "
+    + "\">\n	    </div-->\n	    <div class=\"itemssearcher-item-results-content\">\n	        <div class=\"itemssearcher-item-results-title\">\n	            "
     + alias2((compilerNameLookup(helpers,"highlightKeyword") || (depth0 && compilerNameLookup(depth0,"highlightKeyword")) || alias4).call(alias3,((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"_name") : stack1),(depth0 != null ? compilerNameLookup(depth0,"currentQuery") : depth0),{"name":"highlightKeyword","hash":{},"data":data}))
-    + "\n	        </div>\n	        <div data-view=\"Global.StarRating\"></div>\n	    </div>\n	</a>\n";
+    + "\n	        </div>\n	        <!--div data-view=\"Global.StarRating\"></div--> \n	    </div>\n	</a>\n";
 },"3":function(container,depth0,helpers,partials,data) {
     var stack1;
 
@@ -48,4 +48,4 @@ define('itemssearcher_item.tpl', ['Handlebars','Handlebars.CompilerNameLookup'],
 
   return ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"isItemSelected") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
     + "\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'itemssearcher_item'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'itemssearcher_item'; return template;});

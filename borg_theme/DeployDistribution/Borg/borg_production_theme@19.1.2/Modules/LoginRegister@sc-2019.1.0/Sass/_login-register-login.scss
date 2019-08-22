@@ -1,0 +1,119 @@
+.login-register-login-description{
+	color: $sc-color-theme-main;
+}
+
+.login-register-login-form-controls-group{
+	margin-top: $sc-margin-lv4;
+}
+
+.login-register-login-form-required {
+	@extend .input-required;
+}
+
+.login-register-login-form-input {
+	@extend .input-large;
+}
+
+.login-register-login-submit {
+	@extend .button-large;
+	@extend .button-primary;
+	background: $sc-color-primary;
+}
+
+.login-register-login-forgot {
+	margin-top: $sc-margin-lv4;
+	&:hover {
+		color: #fff;
+	}
+	@media (min-width: $screen-sm-min) {
+		margin-top: 20px;
+	    margin-left: 10px;
+	    display: block;
+	}
+}
+
+.login-register-login-form-messages {
+	margin-top: $sc-margin-lv4;
+	.global-views-message-error {
+		@extend .message-error;
+		margin-bottom: 0;
+	}
+	.global-views-message-button {
+		display: none;
+	}
+}
+.login-register-login-form-messages-timeout {
+	@extend .global-views-message;
+	@extend .global-views-message-error;
+}
+.login-register-login-form-controls-group {
+	@extend .login-register-register-form-controls-group;
+}
+.login-register-login-form-controls {
+	@extend .login-register-register-form-controls !optional;
+}
+.login-register-wrapper-login {
+	background-color: #282828;
+	*{
+		color: #fff;
+	}
+	input {
+		background-color: #282828;
+		border: 0px;
+		border-bottom: 1px solid #fff;
+		padding: 10px 0 0 0;
+	}
+	.data-validation-error {
+		background-color: red;
+		color: #fff;
+	}
+	h3 {
+		padding: 0 0 20px;
+	}
+	small{
+		font-size:.5rem;
+	}
+	.login-register-login-form-controls-group {
+		margin: 20px 0;
+	}
+	.login-register-login-submit {
+		background-color:#282828;
+		padding: 10px 40px;
+		olor: #cca323;
+		&:hover {
+			background-color: #cca323;
+			color: #282828;
+		}
+	}
+}
+.flex-form {
+	display: flex;
+	flex-flow: row nowrap;
+	.login-register-login-form,
+	.extra-buttons {
+		display: flex;
+    	flex-flow: column;
+    	flex: 2;	
+	}
+	.extra-buttons {
+    	flex: 1;
+	    flex-flow: column;
+	    flex-basis: 50%;
+	    justify-content: flex-end;
+	    padding-left: 40px;
+	    padding-bottom: 20px;
+    	a {
+    		padding: 10px 0;
+    		&:hover {
+    			color: #fff;
+    		}
+    		&::after {
+    			font-family: FontAwesome;
+			    content: "\f18e";
+			    text-align: right;
+			    padding-left: 10px;
+			    font-weight: 100;
+    		}
+    	}	
+	}
+}

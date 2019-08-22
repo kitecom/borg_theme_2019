@@ -182,7 +182,11 @@ require.config({
     "sc_cct_html.tpl": "tmp/processed-templates/sc_cct_html.tpl",
     "site_search.tpl": "tmp/processed-templates/site_search.tpl",
     "site_search_button.tpl": "tmp/processed-templates/site_search_button.tpl",
-    "footer_simplified.tpl": "tmp/processed-templates/footer_simplified.tpl"
+    "netsuite_featuredcategory_featuredcategorycct.tpl": "tmp/processed-templates/netsuite_featuredcategory_featuredcategorycct.tpl",
+    "netsuite_featuredcategory_item.tpl": "tmp/processed-templates/netsuite_featuredcategory_item.tpl",
+    "netsuite_featuredcategory_button.tpl": "tmp/processed-templates/netsuite_featuredcategory_button.tpl",
+    "suitecommerce_customfields_pdp_field.tpl": "tmp/processed-templates/suitecommerce_customfields_pdp_field.tpl",
+    "suitecommerce_customfields_checkout_field_checkbox.tpl": "tmp/processed-templates/suitecommerce_customfields_checkout_field_checkbox.tpl"
 }
             ,   "baseUrl": 'http://localhost:7777'
             });

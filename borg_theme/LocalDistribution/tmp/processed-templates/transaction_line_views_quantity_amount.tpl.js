@@ -19,13 +19,17 @@ define('transaction_line_views_quantity_amount.tpl', ['Handlebars','Handlebars.C
     + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"line") : depth0)) != null ? compilerNameLookup(stack1,"total_formatted") : stack1), depth0))
     + "\n			</span>\n			<span class=\"transaction-line-views-quantity-amount-non-discounted-amount\">\n				"
     + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"line") : depth0)) != null ? compilerNameLookup(stack1,"amount_formatted") : stack1), depth0))
-    + "\n			</span>\n";
+    + "\n				<!--"
+    + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"line") : depth0)) != null ? compilerNameLookup(stack1,"amount") : stack1), depth0))
+    + "-->\n			</span>\n";
 },"6":function(container,depth0,helpers,partials,data) {
-    var stack1;
+    var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
   return "			<span class=\"transaction-line-views-quantity-amount-item-amount\">\n				"
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"line") : depth0)) != null ? compilerNameLookup(stack1,"amount_formatted") : stack1), depth0))
-    + "\n			</span>\n";
+    + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"line") : depth0)) != null ? compilerNameLookup(stack1,"amount_formatted") : stack1), depth0))
+    + "\n				<!--"
+    + alias2(alias1(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"line") : depth0)) != null ? compilerNameLookup(stack1,"amount") : stack1), depth0))
+    + "-->\n			</span>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
@@ -33,4 +37,4 @@ define('transaction_line_views_quantity_amount.tpl', ['Handlebars','Handlebars.C
     + "\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showAmount") : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'transaction_line_views_quantity_amount'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'transaction_line_views_quantity_amount'; return template;});

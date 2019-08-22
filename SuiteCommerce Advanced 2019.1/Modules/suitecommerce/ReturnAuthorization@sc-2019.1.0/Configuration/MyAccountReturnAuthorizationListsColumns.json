@@ -1,0 +1,52 @@
+{
+	"properties": {
+		"transactionListColumns.returnAuthorization": {
+			"group": "myAccountApp",
+			"subtab": "transactionListColumns",
+			"type": "array",
+			"title": "Transaction list columns Return Authorization",
+			"description": "Use these fields to assign custom column headings for My Account > Purchases > Returns.",
+			"items": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string",
+						"title": "ID",
+						"description": "Enter the Field ID of the field you want to render. Valid values: trandate, quantity, and amount_formatted."
+					},
+					"label": {
+						"type": "string",
+						"title": "Label",
+						"description": "Enter the title you want to use for this column."
+					}
+				}
+			},
+			"default": [
+				{
+					"id": "trandate",
+					"label": "Date"
+				},
+				{
+					"id": "quantity",
+					"label": "Items:"
+				},
+				{
+					"id": "amount_formatted",
+					"label": "Amount"
+        },
+        {
+          "id": "status",
+          "label": "Status"
+        }
+			]
+		},
+		"transactionListColumns.enableReturnAuthorization": {
+			"group": "myAccountApp",
+			"subtab": "transactionListColumns",
+			"type": "boolean",
+			"title": "Enable Return Authorization columns management",
+			"description": "Check this box to enable Return Authorization Columns Management.",
+			"default": false
+		}
+	}
+}

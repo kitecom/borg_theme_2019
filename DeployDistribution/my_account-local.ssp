@@ -80,7 +80,7 @@
 			var ie_css_files = app_includes.myaccount.ie;
 			for(var i=0; i < ie_css_files.length; i++)
 			{
-		%><link rel="stylesheet" href="<%= ROOT %><%= ie_css_files[i] %>?t=1557751001374">
+		%><link rel="stylesheet" href="<%= ROOT %><%= ie_css_files[i] %>?t=1566226288912">
 		<%
 			}
 		%>
@@ -205,13 +205,13 @@ var SC = window.SC = {
 };
 			SC.isDevelopment = true;
 			
-			loadJSON('<%= session.getAbsoluteUrl2("services/MyAccountEnvironment.Service.ss?" + environmentParameters.join("&") ) %>&t=1557751001374', 'myAccountEnvironment')
+			loadJSON('<%= session.getAbsoluteUrl2("services/MyAccountEnvironment.Service.ss?" + environmentParameters.join("&") ) %>&t=1566226288912', 'myAccountEnvironment')
 			.done(function(env){
 				merge(SC, env);
 				SC.ENVIRONMENT.isTouchEnabled = ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch;
 				document.documentElement.className = (SC.ENVIRONMENT.isTouchEnabled) ? 'touch' : 'no-touch';
                 
-				loadScript('<%=session.getAbsoluteUrl2("languages")%>/myaccount_' + SC.ENVIRONMENT.currentLanguage.locale + '.js?t=1557751001374');
+				loadScript('<%=session.getAbsoluteUrl2("languages")%>/myaccount_' + SC.ENVIRONMENT.currentLanguage.locale + '.js?t=1566226288912');
 			});
 			//Define a function to load script at runtime. The script can be removed of the generated html by the server seo, please see SCA.Checkout.Starter.js.
 			function loadScript (url)
@@ -231,8 +231,8 @@ var SC = window.SC = {
 			};
 		</script>
 
-		<script src="<%= session.getAbsoluteUrl2('myaccount.environment.shortcache.ssp?X-SC-Touchpoint=myaccount') %>&t=1557751001374"></script>
-		<script src="<%= session.getAbsoluteUrl2('customFieldsMetadata.ssp?')%>t=1557751001374"></script>
+		<script src="<%= session.getAbsoluteUrl2('myaccount.environment.shortcache.ssp?X-SC-Touchpoint=myaccount') %>&t=1566226288912"></script>
+		<script src="<%= session.getAbsoluteUrl2('customFieldsMetadata.ssp?')%>t=1566226288912"></script>
 		<% if (Error) { %>
 		<script>SC.ENVIRONMENT.contextError = <%= JSON.stringify(Error) %>;</script>
 		<% } %>
@@ -265,14 +265,14 @@ var SC = window.SC = {
 
     var isExtended = !!<%= isExtended %>
 	,	local_dependencies = {
-			css: '<%= session.getAbsoluteUrl2(app_includes.myaccount.css[0])%>?t=1557751001374'
-		,	templates: '<%= session.getAbsoluteUrl2(app_includes.myaccount.templates[0])%>?t=1557751001374'
-		,	js_core: '<%= session.getAbsoluteUrl2(core_js[0]) %>?t=1557751001374'
+			css: '<%= session.getAbsoluteUrl2(app_includes.myaccount.css[0])%>?t=1566226288912'
+		,	templates: '<%= session.getAbsoluteUrl2(app_includes.myaccount.templates[0])%>?t=1566226288912'
+		,	js_core: '<%= session.getAbsoluteUrl2(core_js[0]) %>?t=1566226288912'
 		};
     
     if(isExtended)
 	{
-		local_dependencies.js_extensions = '<%= session.getAbsoluteUrl2(extensions_js)%>?t=1557751001374';
+		local_dependencies.js_extensions = '<%= session.getAbsoluteUrl2(extensions_js)%>?t=1566226288912';
 	}
 
     if(!SC.isPageGenerator())

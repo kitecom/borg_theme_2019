@@ -1,0 +1,47 @@
+.wizard-step-header{
+	margin-bottom: $sc-margin-lv4;
+}
+
+.wizard-step-message{
+	display: block;
+	width: 100%;
+	margin-bottom: $sc-margin-lv4;
+
+	@media (min-width: $screen-sm-min){
+		text-align: left;
+	}
+}
+
+.wizard-step-button-container{
+	@include clearfix();
+	margin-bottom: $sc-margin-lv6;
+}
+
+.wizard-step-button-continue {
+
+	@extend .button-large;
+	@extend .button-primary;
+
+	@media (min-width: $screen-sm-min){
+		float:left;
+	}
+}
+
+.wizard-step-button-back{
+
+	@extend .button-large;
+	@extend .button-secondary;
+	margin-top: $sc-margin-lv2;
+
+	@media (min-width: $screen-sm-min){
+		margin-top: 0;
+		float:right;
+	}
+}
+#wizard-step-content-right.review {
+	margin-top: -48px;
+}
+.order-wizard-step-content-main .order-wizard-termsandconditions-module-default.module-rendered,
+#wizard-step-content-right.review + .order-wizard-step-actions-right {
+	display: none;
+}

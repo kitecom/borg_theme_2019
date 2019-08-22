@@ -55,7 +55,7 @@ define('header_menu.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], functi
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "<nav class=\"header-menu-secondary-nav\">\n\n	<!--div class=\"header-menu-search\" data-view=\"SiteSearch.Button\"></div-->\n	<div class=\"shopping-layout-breadcrumb\" itemscope itemtype=\"https://schema.org/WebPage\">\n		<div data-view=\"Global.Breadcrumb\" data-type=\"breadcrumb\"></div>\n	</div>\n	<ul class=\"header-menu-level1\">\n\n"
+  return "<nav class=\"header-menu-secondary-nav\">\n	<div class=\"nameholder\"></div>\n	<ul class=\"header-menu-level1\">\n\n"
     + ((stack1 = compilerNameLookup(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"categories") : depth0),{"name":"each","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n	</ul>\n\n</nav>\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'header_menu'; return template;});
+    + "\n	</ul>\n	<div class=\"empty\"></div>\n</nav>\n\n\n\n";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'header_menu'; return template;});

@@ -1,0 +1,118 @@
+.facets-faceted-navigation-results{
+	padding-top: $sc-padding-lv4;
+	padding-left: $sc-padding-lv3;
+	padding-right: $sc-padding-lv3;
+
+	font-size: $sc-font-size-m;
+
+	@media (min-width: $screen-md-min){
+		display: none;
+	}
+}
+
+.facets-faceted-navigation-title-alt {
+	color: $sc-color-primary;
+}
+
+.facets-faceted-navigation-facet-group {
+	padding: $sc-padding-lv2 $sc-padding-lv3;
+
+	@media (min-width: $screen-md-min) {
+		padding: 0;
+	}
+}
+
+.facets-faceted-navigation-title {
+	display: none;
+
+	@media (min-width: $screen-md-min) {
+		font-size: 1rem;
+		font-weight: 400;
+		text-align: left;
+		display: block;
+		padding: 10px 15px 0;
+		padding-left: 0;
+			/*&:first-of-type{
+			background: #000;
+			color: #fff;
+		}*/
+	}
+}
+
+.facetSideNav {
+	background: #fff;
+}
+
+.facets-faceted-navigation-facets-clear {
+	@extend .filter-generic;
+
+	width: inherit;
+	font-size: $sc-font-size-xs;
+
+	@media (min-width: $screen-md-min) {
+		position: inherit;
+		display: inline-block;
+	}
+
+	@media (max-width: $screen-sm-max) {
+		margin-left: $sc-padding-lv3;
+	}
+}
+
+.facets-faceted-navigation-facets-clear-icon {
+	@extend .facets-faceted-navigation-facet-option-circle;
+}
+.facets-faceted-navigation-facet-group-expander:hover {
+	text-decoration: none;
+}
+
+.facets-faceted-navigation-facet-group-title,
+.facets-faceted-navigation-item-color-facet-group-title {
+		font-size: $sc-font-size-m;
+		/*border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;*/
+    padding: 10px 0;
+
+}
+
+.facets-faceted-navigation-facet-group-expander {
+	display:block;
+	padding: 0;
+	border-top: 1px solid #ccc;
+}
+
+.facets-faceted-navigation-facet-group-expander-icon {
+	float: right;
+	color: $sc-color-copy;
+	font-size: $sc-navigation-icon-size;
+	margin-top: -3px;
+	/*@extend .icon-plus-circle;*/
+	@include transition-transform(300ms ease);
+}
+
+.collapsed .facets-faceted-navigation-facet-group-expander-icon{
+	@include rotate(180deg);
+	/*@extend .icon-minus-circle;*/
+}
+
+/*  */
+.facets-faceted-navigation-facet-option {
+	@extend .single-select-option;
+}
+
+.facets-faceted-navigation-facet-option-circle {
+	@extend .single-select-icon-close;
+}
+/* */
+
+.facets-faceted-navigation-content .sc-pusher-header{
+	margin:0;
+}
+.facetWrapper {
+	background-color: #fff;
+}
+.facets-faceted-navigation-facets-clear {
+	span {
+		font-weight: 600;
+	}
+}

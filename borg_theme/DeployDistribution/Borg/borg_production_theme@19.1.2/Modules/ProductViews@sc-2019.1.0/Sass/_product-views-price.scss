@@ -1,0 +1,24 @@
+.product-views-price-lead{
+	@extend .middle-price;
+}
+
+.product-views-price-old{
+	@extend .old-price;
+}
+
+.product-views-price-login-to-see-prices-highlighted {
+	margin-top: $sc-margin-lv2;
+  margin-bottom: $sc-margin-lv2;
+	padding: 0px;
+}
+.product-views-price-login-to-see-prices {
+    @extend .message;
+		padding: 0px;
+}
+
+.product-views-price-message {
+	font-weight: normal;
+}
+.cart-add-to-cart-button-container {
+	width: 100%;
+}

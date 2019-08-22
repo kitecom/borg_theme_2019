@@ -18,7 +18,7 @@ define('product_details_information.tpl', ['Handlebars','Handlebars.CompilerName
     + "\" data-type=\"sc-pusher\">\n					"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"name") || (depth0 != null ? compilerNameLookup(depth0,"name") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
     + " <i></i>\n					<p class=\"product-details-information-hint\"> "
-    + ((stack1 = (compilerNameLookup(helpers,"trimHtml") || (depth0 && compilerNameLookup(depth0,"trimHtml")) || alias2).call(alias1,(depth0 != null ? compilerNameLookup(depth0,"content") : depth0),150,{"name":"trimHtml","hash":{},"data":data})) != null ? stack1 : "")
+    + ((stack1 = (compilerNameLookup(helpers,"trimHtml") || (depth0 && compilerNameLookup(depth0,"trimHtml")) || alias2).call(alias1,(depth0 != null ? compilerNameLookup(depth0,"content") : depth0),50,{"name":"trimHtml","hash":{},"data":data})) != null ? stack1 : "")
     + " </p>\n				</button>\n";
 },"5":function(container,depth0,helpers,partials,data,blockParams,depths) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3=container.escapeExpression;
@@ -102,4 +102,4 @@ define('product_details_information.tpl', ['Handlebars','Handlebars.CompilerName
   return "<div class=\"product-details-information-content\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"showInformation") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0, blockParams, depths),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "</div>\n\n\n\n";
-},"useData":true,"useDepths":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'product_details_information'; return template;});
+},"useData":true,"useDepths":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'product_details_information'; return template;});

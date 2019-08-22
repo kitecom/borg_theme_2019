@@ -1,0 +1,16 @@
+{
+    "gulp": {
+        "javascript": [
+            "JavaScript/*"
+        ],
+        "configuration": [
+            "Configuration/*.json"
+        ],
+        "unit-test-files": [
+            "Tests/*.js"
+        ],
+        "unit-test-entry-point": [
+            "Tests/UnitTest.SCA.js"
+        ]
+    }
+}

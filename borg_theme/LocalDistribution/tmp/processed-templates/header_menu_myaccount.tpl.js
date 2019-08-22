@@ -20,7 +20,7 @@ define('header_menu_myaccount.tpl', ['Handlebars','Handlebars.CompilerNameLookup
 },"7":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return "		<li class=\"header-menu-myaccount-item-level2\">\n			<a class=\"header-menu-myaccount-anchor-level2\" href=\"#\" data-touchpoint=\"customercenter\" data-hashtag=\"#wishlist\" name=\"wishlist\">\n				"
+  return "		<li class=\"header-menu-myaccount-item-level2 wishlist\">\n			<a class=\"header-menu-myaccount-anchor-level2\" href=\"#\" data-touchpoint=\"customercenter\" data-hashtag=\"#wishlist\" name=\"wishlist\">\n				"
     + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(alias1,"Wishlist",{"name":"translate","hash":{},"data":data}))
     + "\n			</a>\n\n			<ul class=\"header-menu-myaccount-level3\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"productListsReady") : depth0),{"name":"if","hash":{},"fn":container.program(8, data, 0),"inverse":container.program(13, data, 0),"data":data})) != null ? stack1 : "")
@@ -76,22 +76,22 @@ define('header_menu_myaccount.tpl', ['Handlebars','Handlebars.CompilerNameLookup
     + "\n		</a>\n	</li>\n\n	<li class=\"header-menu-myaccount-item-level2 header-menu-myaccount-level2-orders\" data-permissions=\""
     + alias3(((helper = (helper = compilerNameLookup(helpers,"purchasesPermissions") || (depth0 != null ? compilerNameLookup(depth0,"purchasesPermissions") : depth0)) != null ? helper : alias2),(typeof helper === alias4 ? helper.call(alias1,{"name":"purchasesPermissions","hash":{},"data":data}) : helper)))
     + "\" data-permissions-operator=\"OR\">\n		<a class=\"header-menu-myaccount-anchor-level2\" href=\"#\" data-action=\"push-menu\" name=\"orders\">\n			"
-    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Purchases",{"name":"translate","hash":{},"data":data}))
-    + "\n			<i class=\"header-menu-myaccount-menu-push-icon\"></i>\n		</a>\n		<ul class=\"header-menu-myaccount-level3 header-menu-myaccount-level3-orders\">\n			<li>\n				<a href=\"#\" class=\"header-menu-myaccount-back\" data-action=\"pop-menu\" name=\"back-level3\">\n					<i class=\"header-menu-myaccount-pop-icon \"></i>\n					"
+    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Orders",{"name":"translate","hash":{},"data":data}))
+    + "\n			<i class=\"header-menu-myaccount-menu-push-icon\"></i>\n		</a>\n		<ul class=\"header-menu-myaccount-level3 header-menu-myaccount-level3-orders\">\n			<li class=\"back\">\n				<a href=\"#\" class=\"header-menu-myaccount-back\" data-action=\"pop-menu\" name=\"back-level3\">\n					<i class=\"header-menu-myaccount-pop-icon \"></i>\n					"
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Back",{"name":"translate","hash":{},"data":data}))
     + "\n				</a>\n			</li>\n			<li data-permissions=\""
     + alias3(((helper = (helper = compilerNameLookup(helpers,"purchasesPermissions") || (depth0 != null ? compilerNameLookup(depth0,"purchasesPermissions") : depth0)) != null ? helper : alias2),(typeof helper === alias4 ? helper.call(alias1,{"name":"purchasesPermissions","hash":{},"data":data}) : helper)))
-    + "\">\n				<a class=\"header-menu-myaccount-anchor-level3\" href=\"#\" data-touchpoint=\"customercenter\" data-hashtag=\"#purchases\" name=\"orderhistory\">\n					"
-    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Purchases History",{"name":"translate","hash":{},"data":data}))
-    + "\n				</a>\n			</li>\n			<li>\n				<a class=\"header-menu-myaccount-anchor-level3\" href=\"#\" data-touchpoint=\"customercenter\" data-hashtag=\"#returns\" data-permissions=\""
+    + "\" class=\"orderhistory\">\n				<a class=\"header-menu-myaccount-anchor-level3\" href=\"#\" data-touchpoint=\"customercenter\" data-hashtag=\"#purchases\" name=\"orderhistory\">\n					"
+    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Order History",{"name":"translate","hash":{},"data":data}))
+    + "\n				</a>\n			</li>\n			<li class=\"returns\">\n				<a class=\"header-menu-myaccount-anchor-level3\" href=\"#\" data-touchpoint=\"customercenter\" data-hashtag=\"#returns\" data-permissions=\""
     + alias3(((helper = (helper = compilerNameLookup(helpers,"returnsPermissions") || (depth0 != null ? compilerNameLookup(depth0,"returnsPermissions") : depth0)) != null ? helper : alias2),(typeof helper === alias4 ? helper.call(alias1,{"name":"returnsPermissions","hash":{},"data":data}) : helper)))
     + "\" name=\"returns\">\n					"
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Returns",{"name":"translate","hash":{},"data":data}))
     + "\n				</a>\n			</li>\n			<li data-permissions=\""
     + alias3(((helper = (helper = compilerNameLookup(helpers,"purchasesPermissions") || (depth0 != null ? compilerNameLookup(depth0,"purchasesPermissions") : depth0)) != null ? helper : alias2),(typeof helper === alias4 ? helper.call(alias1,{"name":"purchasesPermissions","hash":{},"data":data}) : helper)))
-    + "\">\n				<a class=\"header-menu-myaccount-anchor-level3\" href=\"#\" data-touchpoint=\"customercenter\" data-hashtag=\"#reorderItems\" name=\"reorderitems\">\n					"
+    + "\" class=\"reorderitems\">\n				<a class=\"header-menu-myaccount-anchor-level3\" href=\"#\" data-touchpoint=\"customercenter\" data-hashtag=\"#reorderItems\" name=\"reorderitems\">\n					"
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Reorder Items",{"name":"translate","hash":{},"data":data}))
-    + "\n				</a>\n			</li>\n			<li class=\"header-menu-myaccount-item-level3\" data-permissions=\"transactions.tranFind.1,transactions.tranEstimate.1\">\n				<a class=\"header-menu-myaccount-anchor-level3\" data-action=\"push-menu\" href=\"#\" data-touchpoint=\"customercenter\" data-hashtag=\"#quotes\" name=\"quotes\">\n					"
+    + "\n				</a>\n			</li class=\"quotes\">\n			<li class=\"header-menu-myaccount-item-level3\" data-permissions=\"transactions.tranFind.1,transactions.tranEstimate.1\">\n				<a class=\"header-menu-myaccount-anchor-level3\" data-action=\"push-menu\" href=\"#\" data-touchpoint=\"customercenter\" data-hashtag=\"#quotes\" name=\"quotes\">\n					"
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Quotes",{"name":"translate","hash":{},"data":data}))
     + "\n					<i class=\"header-menu-myaccount-menu-push-icon\"></i>\n				</a>\n				<ul class=\"header-menu-myaccount-level4\">\n					<li>\n						<a href=\"#\" class=\"header-menu-myaccount-back\" data-action=\"pop-menu\" name=\"back-level4\">\n							<i class=\"header-menu-myaccount-pop-icon \"></i>\n							"
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Back",{"name":"translate","hash":{},"data":data}))
@@ -130,4 +130,4 @@ define('header_menu_myaccount.tpl', ['Handlebars','Handlebars.CompilerNameLookup
     + "\n				</a>\n			</li>\n		</ul>\n	</li>\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isCaseModuleEnabled") : depth0),{"name":"if","hash":{},"fn":container.program(15, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n</ul>\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'header_menu_myaccount'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'header_menu_myaccount'; return template;});

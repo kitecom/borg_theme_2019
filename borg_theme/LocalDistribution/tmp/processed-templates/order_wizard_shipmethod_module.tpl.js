@@ -19,11 +19,12 @@ define('order_wizard_shipmethod_module.tpl', ['Handlebars','Handlebars.CompilerN
 },"8":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"hasShippingMethods") : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.program(20, data, 0),"data":data})) != null ? stack1 : "");
+  return ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"hasShippingMethods") : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.program(22, data, 0),"data":data})) != null ? stack1 : "");
 },"9":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"showSelectForShippingMethod") : depth0),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.program(14, data, 0),"data":data})) != null ? stack1 : "");
+  return ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"showSelectForShippingMethod") : depth0),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.program(14, data, 0),"data":data})) != null ? stack1 : "")
+    + "\n";
 },"10":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
@@ -49,9 +50,10 @@ define('order_wizard_shipmethod_module.tpl', ['Handlebars','Handlebars.CompilerN
 },"12":function(container,depth0,helpers,partials,data) {
     return "selected";
 },"14":function(container,depth0,helpers,partials,data) {
-    var stack1;
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
-  return ((stack1 = compilerNameLookup(helpers,"each").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"shippingMethods") : depth0),{"name":"each","hash":{},"fn":container.program(15, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
+  return ((stack1 = compilerNameLookup(helpers,"each").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"shippingMethods") : depth0),{"name":"each","hash":{},"fn":container.program(15, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"handlingcost") : stack1),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
 },"15":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
@@ -67,15 +69,25 @@ define('order_wizard_shipmethod_module.tpl', ['Handlebars','Handlebars.CompilerN
     + alias4(((helper = (helper = compilerNameLookup(helpers,"internalid") || (depth0 != null ? compilerNameLookup(depth0,"internalid") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"internalid","hash":{},"data":data}) : helper)))
     + "\" />\n							\n							<span class=\"order-wizard-shipmethod-module-option-name\">"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"name") || (depth0 != null ? compilerNameLookup(depth0,"name") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"name","hash":{},"data":data}) : helper)))
-    + "\n								<span class=\"order-wizard-shipmethod-module-option-price\">"
+    + "\n								<span class=\"order-wizard-shipmethod-module-option-price\"><b>"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"rate_formatted") || (depth0 != null ? compilerNameLookup(depth0,"rate_formatted") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"rate_formatted","hash":{},"data":data}) : helper)))
-    + "</span>	\n							</span>\n						</a>\n";
+    + "</b></span>	\n							</span>\n\n						</a>\n\n";
 },"16":function(container,depth0,helpers,partials,data) {
     return "order-wizard-shipmethod-module-option-active";
 },"18":function(container,depth0,helpers,partials,data) {
     return "checked";
 },"20":function(container,depth0,helpers,partials,data) {
-    return "				<div class=\"order-wizard-shipmethod-module-message\">\n					"
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3=container.escapeExpression;
+
+  return "						<p class=\"order-wizard-shipmethod-module-handling\">\n							<span class=\"order-wizard-shipmethod-module-handling-cost\">\n								"
+    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"All delivery options include",{"name":"translate","hash":{},"data":data}))
+    + "</span> "
+    + alias3(container.lambda(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"handlingcost_formatted") : stack1), depth0))
+    + " <span> "
+    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"ADR Dangerous Goods surcharge",{"name":"translate","hash":{},"data":data}))
+    + "\n							</span>\n							\n						</p>\n";
+},"22":function(container,depth0,helpers,partials,data) {
+    return "\n				\n				<div class=\"order-wizard-shipmethod-module-message\">\n					"
     + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Warning: No Delivery Methods are available for this address",{"name":"translate","hash":{},"data":data}))
     + "\n				</div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
@@ -83,7 +95,8 @@ define('order_wizard_shipmethod_module.tpl', ['Handlebars','Handlebars.CompilerN
 
   return "<div class=\"order-wizard-shipmethod-module\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showTitle") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "	\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showEnterShippingAddressFirst") : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.program(5, data, 0),"data":data})) != null ? stack1 : "")
-    + "</div>\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_wizard_shipmethod_module'; return template;});
+    + "</div>\n\n"
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"sessionModel") : depth0)) != null ? compilerNameLookup(stack1,"StoreEmail") : stack1), depth0))
+    + "\n\n";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_wizard_shipmethod_module'; return template;});

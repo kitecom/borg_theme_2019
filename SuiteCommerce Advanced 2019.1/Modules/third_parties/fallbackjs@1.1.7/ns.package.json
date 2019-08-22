@@ -1,0 +1,8 @@
+{
+	"gulp": {
+		"copy": [
+			"fallback.min.js"
+		]
+	}
+,	"jshint": "false"
+}

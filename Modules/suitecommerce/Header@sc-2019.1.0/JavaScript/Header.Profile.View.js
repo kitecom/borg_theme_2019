@@ -58,7 +58,16 @@ define(
 	,	childViews: {
 			'Header.Menu.MyAccount': function ()
 			{
-				return new HeaderMenuMyAccountView(this.options);
+			  var password_protected_site =
+			    SC.ENVIRONMENT.siteSettings.siteloginrequired === 'T';
+			  var profile = ProfileModel.getInstance();
+			  var isLoggedIn = profile.get('isLoggedIn') === 'T';
+			  
+			  if (!password_protected_site || isLoggedIn) {
+			    return new HeaderMenuMyAccountView(this.options);
+			  } else {
+			  return null;
+			  }
 			}
 		}
 
@@ -67,20 +76,22 @@ define(
 		{
 			var profile = ProfileModel.getInstance()
 			,	is_loading = !_.getPathFromObject(Configuration, 'performance.waitForUserProfile', true) && ProfileModel.getPromise().state() !== 'resolved'
-			,	is_logged_in = (profile.get('isLoggedIn') === 'T' || profile.get('isRecognized') === 'T') && profile.get('isGuest') === 'F';
+			,	is_loged_in = (profile.get('isLoggedIn') === 'T' || profile.get('isRecognized') === 'T') && profile.get('isGuest') === 'F';
 
 			// @class Header.Profile.View.Context
 			return {
 				// @property {Boolean} showExtendedMenu
-				showExtendedMenu: !is_loading && is_logged_in
+				showExtendedMenu: !is_loading && is_loged_in
 				// @property {Boolean} showLoginMenu
-			,	showLoginMenu: !is_loading && !is_logged_in
+			,	showLoginMenu: !is_loading && !is_loged_in
 				// @property {Boolean} showLoadingMenu
 			,	showLoadingMenu: is_loading
 				// @property {Boolean} showMyAccountMenu
 			,	showMyAccountMenu: !!this.options.showMyAccountMenu
 				// @property {String} displayName
 			,	displayName: profile.get('firstname') || profile.get('companyname')
+			,	firstName: profile.get('firstname')
+			,	lastName: profile.get('lastname')
 				// @property {Boolean} showLogin
 			,	showLogin: Configuration.getRegistrationType() !== 'disabled'
 				// @property {Boolean} showRegister

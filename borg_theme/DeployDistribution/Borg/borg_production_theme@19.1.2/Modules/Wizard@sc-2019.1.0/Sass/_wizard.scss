@@ -1,0 +1,23 @@
+.wizard-header {
+	@extend .full-width-column;
+	display: flex;
+	flex-flow: row nowrap;
+	border-bottom: 1px solid $sc-color-theme-border-light;
+	padding-bottom: $sc-margin-lv1;
+	margin-bottom: $sc-margin-lv4;
+	@media (min-width: $screen-sm-min){
+		margin-bottom: $sc-margin-lv6;
+	}
+	.wizard-header-title{
+		margin-bottom: $sc-margin-lv2;
+		flex-basis: auto;
+		padding: 0 30px 0 0;
+	}
+	.stepper {
+		flex-basis: auto;
+		padding-top: 5px;
+	}
+}
+
+
+

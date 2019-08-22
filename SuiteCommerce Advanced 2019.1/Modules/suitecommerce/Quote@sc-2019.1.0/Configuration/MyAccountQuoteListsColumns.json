@@ -1,0 +1,52 @@
+{
+	"properties": {
+		"transactionListColumns.quote": {
+			"group": "myAccountApp",
+			"subtab": "transactionListColumns",
+			"type": "array",
+			"title": "Transaction list columns Quote",
+			"description": "Use these fields to assign custom column headings for My Account > Purchases > Quotes.",
+			"items": {
+				"type": "object",
+				"properties": {
+					"id": {
+						"type": "string",
+						"title": "ID",
+						"description": "Enter the Field ID of the field you want to render. Valid values: trandate, duedate, and total_formatted."
+					},
+					"label": {
+						"type": "string",
+						"title": "Label",
+						"description": "Enter the title you want to use for this column."
+					}
+				}
+			},
+			"default": [
+				{
+					"id": "trandate",
+					"label": "Request date:"
+				},
+				{
+					"id": "duedate",
+					"label": "Expiration date:"
+				},
+				{
+					"id": "total_formatted",
+					"label": "Amount"
+                },
+                {
+                  "id": "entitystatus",
+                  "label": "Status"
+                }
+			]
+		},
+		"transactionListColumns.enableQuote": {
+			"group": "myAccountApp",
+			"subtab": "transactionListColumns",
+			"type": "boolean",
+			"title": "Enable Quote columns management",
+			"description": "Check this box to enable Quotes Columns Management.",
+			"default": false
+		}
+	}
+}

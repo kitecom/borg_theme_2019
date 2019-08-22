@@ -1,0 +1,57 @@
+{
+	"type": "object"
+,	"subtab": {
+		"id": "transactionListColumns"
+	,	"title": "Transaction List Columns"
+	,	"description": "List of columns for each transaction list"
+	,   "group": "myAccountApp"
+	,	"docRef": "chapter_1548081625"
+	}
+,	"properties": {
+		"transactionListColumns.orderHistory": {
+			"group": "myAccountApp"
+		,	"subtab": "transactionListColumns"
+		,	"type": "array"
+		,	"title": "Transaction list columns order history"
+		,	"description": "Use these fields to assign custom column headings for My Account > Purchases > Purchase History."
+		,	"items": {
+				"type": "object",
+				"properties": {
+					"id": {
+                    	"type": "string"
+                    ,	"title": "ID"
+                	,	"description": "Enter the Field ID of the field you want to render. Valid values: date, amount, and status."
+                    }
+                ,	"label": {
+                        "type": "string"
+                    ,	"title": "Label"
+                    ,	"description": "Enter the title you want to use for this column."
+                    }
+				}
+			}
+		,	"default": [
+				{
+					"id": "trandate"
+				,	"label": "Date"
+				}
+            ,   {
+                    "id": "amount"
+                ,	"label": "Amount"
+                }
+            ,   {
+                    "id": "status"
+                ,	"label": "Status"
+                }
+			]
+		}
+    ,   "transactionListColumns.enableOrderHistory": {
+            "group": "myAccountApp"
+        ,	"subtab": "transactionListColumns"
+        ,	"type": "boolean"
+        ,	"title": "Enable order history columns management"
+        ,	"description": "Check this box to enable Purchase History Columns Management."
+        ,	"default": false
+		}
+		
+	}
+}

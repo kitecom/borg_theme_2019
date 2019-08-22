@@ -7,11 +7,11 @@ define('cart_summary.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], funct
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isSingleItem") : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
     + "				</p>\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showEstimate") : depth0),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "			</div>\n\n			<div data-view=\"CartPromocodeListView\"></div>\n\n"
+    + "			</div>\n\n			<!--div data-view=\"CartPromocodeListView\"></div-->\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showDiscountTotal") : depth0),{"name":"if","hash":{},"fn":container.program(8, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n"
+    + "			<!--\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showGiftCertificates") : depth0),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n"
+    + "			-->\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showPickupInStoreLabel") : depth0),{"name":"if","hash":{},"fn":container.program(12, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n"
     + ((stack1 = compilerNameLookup(helpers,"unless").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"areAllItemsPickupable") : depth0),{"name":"unless","hash":{},"fn":container.program(14, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "");
@@ -117,7 +117,7 @@ define('cart_summary.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], funct
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Ship to:",{"name":"translate","hash":{},"data":data}))
     + "\n								<span class=\"cart-summary-label-shipto-success\">"
     + alias3(((helper = (helper = compilerNameLookup(helpers,"shipToText") || (depth0 != null ? compilerNameLookup(depth0,"shipToText") : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"shipToText","hash":{},"data":data}) : helper)))
-    + "</span>\n								<a href=\"#\" data-action=\"remove-shipping-address\">\n									<span class=\"cart-summary-remove-action\"><i></i></span>\n								</a>\n							</div>\n						</div>\n						<p class=\"cart-summary-grid-float\">\n							<span class=\"cart-summary-amount-shipping\">\n								"
+    + "</span>\n								<!--<a href=\"#\" data-action=\"remove-shipping-address\">\n									<span class=\"cart-summary-remove-action\"><i></i></span>\n								</a>-->\n							</div>\n						</div>\n						<p class=\"cart-summary-grid-float\">\n							<span class=\"cart-summary-amount-shipping\">\n								"
     + alias3(alias4(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"summary") : depth0)) != null ? compilerNameLookup(stack1,"shippingcost_formatted") : stack1), depth0))
     + "\n							</span>\n								"
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Shipping",{"name":"translate","hash":{},"data":data}))
@@ -137,9 +137,9 @@ define('cart_summary.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], funct
 
   return "						<p class=\"cart-summary-grid-float\">\n							<span class=\"cart-summary-amount-handling\">\n								"
     + alias1(container.lambda(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"summary") : depth0)) != null ? compilerNameLookup(stack1,"handlingcost_formatted") : stack1), depth0))
-    + "\n							</span>\n								"
+    + "\n							</span>\n								<!--"
     + alias1((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Handling",{"name":"translate","hash":{},"data":data}))
-    + "\n						</p>\n";
+    + "-->\n								ADR Dangerous Goods Surcharge - CO2\n						</p>\n";
 },"30":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression;
 
@@ -171,11 +171,11 @@ define('cart_summary.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], funct
 },"40":function(container,depth0,helpers,partials,data) {
     var alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3=container.escapeExpression;
 
-  return "		<div class=\"cart-summary-grid cart-summary-promocode-container\">\n			<div class=\"cart-summary-expander-head\">\n				<a class=\"cart-summary-expander-head-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#promo-code-container\" aria-expanded=\"false\" aria-controls=\"promo-code-container\">\n							"
+  return "\n		<div class=\"cart-summary-grid cart-summary-promocode-container\">\n			<div class=\"cart-summary-expander-head\">\n				<a class=\"cart-summary-expander-head-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#promo-code-container\" aria-expanded=\"false\" aria-controls=\"promo-code-container\">\n							"
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Have a Promo Code?",{"name":"translate","hash":{},"data":data}))
     + "\n							<i data-toggle=\"tooltip\" class=\"cart-summary-expander-tooltip\" title=\""
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"<b>Promo Code</b><br>To redeem a promo code, simply enter your information and we will apply the offer to your purchase during checkout.",{"name":"translate","hash":{},"data":data}))
-    + "\"></i>\n							<i class=\"cart-summary-expander-toggle-icon-promocode\"></i>\n				</a>\n			</div>\n			<div class=\"cart-summary-expander-body collapse\" role=\"form\" id=\"promo-code-container\" aria-expanded=\"false\">\n				<div data-view=\"Cart.PromocodeFrom\"></div>\n			</div>\n		</div>\n";
+    + "\"></i>\n							<i class=\"cart-summary-expander-toggle-icon-promocode\"></i>\n				</a>\n			</div>\n			<div class=\"cart-summary-expander-body collapse\" role=\"form\" id=\"promo-code-container\" aria-expanded=\"false\">\n				<div data-view=\"Cart.PromocodeFrom\"></div>\n			</div>\n		</div>\n	";
 },"42":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
@@ -211,9 +211,9 @@ define('cart_summary.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], funct
     + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(alias1,"Order Summary",{"name":"translate","hash":{},"data":data}))
     + "\n		</h3>\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isPriceEnabled") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(38, data, 0),"data":data})) != null ? stack1 : "")
-    + "	</div>\n\n	<div data-cms-area=\"cart_summary_cms_area_2\" data-cms-area-filters=\"path\"></div>\n\n"
+    + "	</div>\n\n	<div data-cms-area=\"cart_summary_cms_area_2\" data-cms-area-filters=\"path\"></div>\n\n	<!--"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showPromocodeForm") : depth0),{"name":"if","hash":{},"fn":container.program(40, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n"
+    + "-->\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showActions") : depth0),{"name":"if","hash":{},"fn":container.program(42, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "</div>\n\n<div data-cms-area=\"cart_summary_cms_area_3\" data-cms-area-filters=\"path\"></div>\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'cart_summary'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'cart_summary'; return template;});

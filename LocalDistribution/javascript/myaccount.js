@@ -215,6 +215,7 @@ require.config({
 		"Header.MiniCartItemCell.View": "Modules/suitecommerce/Header@sc-2019.1.0/JavaScript/Header.MiniCartItemCell.View",
 		"Header.MiniCartSummary.View": "Modules/suitecommerce/Header@sc-2019.1.0/JavaScript/Header.MiniCartSummary.View",
 		"Header.Profile.View": "Modules/suitecommerce/Header@sc-2019.1.0/JavaScript/Header.Profile.View",
+		"Header.Profile.View.js.bak": "Modules/suitecommerce/Header@sc-2019.1.0/JavaScript/Header.Profile.View.js.bak",
 		"Header.Simplified.View": "Modules/suitecommerce/Header@sc-2019.1.0/JavaScript/Header.Simplified.View",
 		"Header.View": "Modules/suitecommerce/Header@sc-2019.1.0/JavaScript/Header.View",
 		"jQuery.sidebarMenu": "Modules/suitecommerce/Header@sc-2019.1.0/JavaScript/jQuery.sidebarMenu",

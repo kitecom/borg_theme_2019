@@ -90,7 +90,7 @@ define('creditcard_edit_form.tpl', ['Handlebars','Handlebars.CompilerNameLookup'
   return "	<div class=\"creditcard-edit-form\">\n		<label class=\"creditcard-edit-form-checkbox\">\n			<input\n				type=\"checkbox\"\n				id=\"savecreditcard\"\n				value=\"T\"\n				data-unchecked-value=\"F\"\n				name=\"savecreditcard\"\n				"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"saveCreditCardByDefault") : depth0),{"name":"if","hash":{},"fn":container.program(25, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n			>\n			"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(alias1,"Save this credit card for future purchases",{"name":"translate","hash":{},"data":data}))
+    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(alias1,"Save this credit card for future orders",{"name":"translate","hash":{},"data":data}))
     + "\n		</label>\n	</div>\n";
 },"25":function(container,depth0,helpers,partials,data) {
     return " checked ";
@@ -125,4 +125,4 @@ define('creditcard_edit_form.tpl', ['Handlebars','Handlebars.CompilerNameLookup'
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showDefaults") : depth0),{"name":"if","hash":{},"fn":container.program(19, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showSaveCreditCardCheckbox") : depth0),{"name":"if","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n</fieldset>\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'creditcard_edit_form'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'creditcard_edit_form'; return template;});

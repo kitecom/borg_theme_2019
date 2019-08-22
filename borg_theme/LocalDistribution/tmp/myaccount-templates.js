@@ -281,7 +281,10 @@ require.config({
     "storelocator_accesspoints_headerlink.tpl": "tmp/processed-templates/storelocator_accesspoints_headerlink.tpl",
     "sc_cct_html.tpl": "tmp/processed-templates/sc_cct_html.tpl",
     "site_search.tpl": "tmp/processed-templates/site_search.tpl",
-    "site_search_button.tpl": "tmp/processed-templates/site_search_button.tpl"
+    "site_search_button.tpl": "tmp/processed-templates/site_search_button.tpl",
+    "netsuite_featuredcategory_featuredcategorycct.tpl": "tmp/processed-templates/netsuite_featuredcategory_featuredcategorycct.tpl",
+    "netsuite_featuredcategory_item.tpl": "tmp/processed-templates/netsuite_featuredcategory_item.tpl",
+    "netsuite_featuredcategory_button.tpl": "tmp/processed-templates/netsuite_featuredcategory_button.tpl"
 }
             ,   "baseUrl": 'http://localhost:7777'
             });

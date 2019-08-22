@@ -1,0 +1,43 @@
+{
+	"tags": {
+		"allowUnknownTags": true
+	},
+	"source": {
+
+
+		"include": [
+			"Modules/suitecommerce"
+		],
+		"excludePattern": "^((?!APIdocs@).)*$",
+		"includePattern": ".*(SuiteScript|extlayercommon).*",
+
+		"exclude": [
+			"node_modules",
+			"ns_npm_repository",
+			"gulp"
+		]
+	},
+	"plugins": ["plugins/markdown"],
+	"templates": {
+		"cleverLinks": false,
+		"monospaceLinks": false,
+		"default": {
+			"outputSourceFiles": true
+		},
+		"copyright": "Copyright © 2005, 2017, Oracle and/or its affiliates. All rights reserved.",
+		"systemName": "SuiteCommerce",
+		"systemSummary": "SuiteCommerce Back-end Extension APIs",
+		"systemLogo": "jsdoc-logo.png"
+	},
+	"opts": {
+		"encoding": "utf8",
+		"destination": "./jsdoc-extlayer-backend/",
+		"recurse": true,
+		"tutorials": "Modules/suitecommerce/APIdocs@sc-2018.2.0/tutorials",
+		"readme": "Modules/suitecommerce/APIdocs@sc-2018.2.0/tutorials/backend_index.md"
+	},
+	"markdown.hardwrap": true,
+	"markdown": {
+		"hardwrap": true
+	}
+}

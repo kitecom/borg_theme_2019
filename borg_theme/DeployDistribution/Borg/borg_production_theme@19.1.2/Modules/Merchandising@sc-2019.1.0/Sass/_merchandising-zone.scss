@@ -1,0 +1,84 @@
+.merchandising-zone-container .bx-wrapper {
+	position: relative;
+}
+
+.merchandising-zone-container .bx-controls-direction {
+    text-align: right;
+}
+
+.merchandising-zone {
+    padding-top: $sc-padding-lv3;
+}
+.merchandising-zone-container {
+    min-height: 200px;
+}
+
+.merchandising-zone h3 {
+    margin-bottom: $sc-margin-lv2;
+}
+
+.merchandising-zone .merchandising-zone-cell-template {
+    text-align: center;
+}
+
+.merchandising-zone .global-views-star-rating {
+    margin: 0 auto;
+    display: inline-block;
+}
+.cms-content-merchzone h2 {
+	padding: 20px 0 0;
+	font-size:2.4rem;
+}
+aside.merchzone {
+	width: 1200px;
+	margin: 20px 0 20px -15px;
+	.row-fluid {
+		padding: 0;
+  		margin: 0;
+  		display: flex;
+    	flex-flow: row nowrap;
+  		justify-content: space-between;
+		.span3 {
+			background: #fff;
+			padding: 0;
+			flex-basis: 280px;
+			margin-top: 0;
+			}
+		}
+	}
+
+aside.merchzone .item-cell {
+	display: flex;
+	flex-flow: column nowrap;
+	.merch-name,
+	.merch-sku,
+	.merch-button {
+		flex-basis: 25%;
+	}
+	.merch-name {
+		font-weight: 300;
+		font-size: 1.15rem;
+		padding: 0 15px; 
+		min-height: 54px;
+	}
+	.merch-sku {
+		color: #282828;
+		font-size: .83rem;
+		padding: 0 15px;
+	}
+	.merch-button {
+		border: 1px solid #000;
+	    border-radius: 20px;
+	    padding: 5px 15px;
+	    width: 40%;
+	    float: right;
+	    display: inline-block;
+	    margin: 15px 15px 0 0;
+	    text-align: center;
+	    align-self: flex-end;
+	    &:hover {
+	    	background-color: #282828;
+	    	color: #fff;
+	    }
+	}
+}

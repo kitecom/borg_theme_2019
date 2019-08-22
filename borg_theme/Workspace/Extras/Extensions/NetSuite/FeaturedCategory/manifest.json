@@ -1,0 +1,133 @@
+{
+	"name": "FeaturedCategory",
+	"fantasyName": "Featured Category",
+	"vendor": "NetSuite",
+	"version": "1.1.0",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"description": "Highlight a collection of products on your website.",
+	"cct": [
+		{
+			"icon": "img/cct_netsuite_featuredcategorycct_icon.svg",
+			"settings_record": "customrecordcct_netsuite_featcategorycct",
+			"registercct_id": "cct_netsuite_featuredcategorycct",
+			"label": "Featured Category",
+			"description": "Highlight a collection of products on your website."
+		}
+	],
+	"skins": [],
+	"assets": {
+		"img": {
+			"files": [
+				"img/cct_netsuite_featuredcategorycct_icon.svg"
+			]
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/FeaturedCategory.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": []
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/FeaturedCategoryCCT/Sass/_featuredcategory-featuredcategorycct.scss",
+			"myaccount": "Modules/FeaturedCategoryCCT/Sass/_featuredcategory-featuredcategorycct.scss",
+			"checkout": "Modules/FeaturedCategoryCCT/Sass/_featuredcategory-featuredcategorycct.scss"
+		},
+		"files": [
+			"Modules/FeaturedCategoryCCT/Sass/_featuredcategory-featuredcategorycct.scss",
+			"Modules/FeaturedCategoryCCT/Sass/_featuredcategorycct.scss"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FeaturedCategoryCCT/Templates/netsuite_featuredcategory_featuredcategorycct.tpl",
+					"Modules/FeaturedCategoryCCT/Templates/netsuite_featuredcategory_item.tpl",
+					"Modules/FeaturedCategoryCCT/Templates/netsuite_featuredcategory_button.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/FeaturedCategoryCCT/Templates/netsuite_featuredcategory_featuredcategorycct.tpl",
+					"Modules/FeaturedCategoryCCT/Templates/netsuite_featuredcategory_item.tpl",
+					"Modules/FeaturedCategoryCCT/Templates/netsuite_featuredcategory_button.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/FeaturedCategoryCCT/Templates/netsuite_featuredcategory_featuredcategorycct.tpl",
+					"Modules/FeaturedCategoryCCT/Templates/netsuite_featuredcategory_item.tpl",
+					"Modules/FeaturedCategoryCCT/Templates/netsuite_featuredcategory_button.tpl"
+				]
+			}
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/FeaturedCategoryModule/JavaScript/FeaturedCategory.Module.js",
+			"myaccount": "Modules/FeaturedCategoryModule/JavaScript/FeaturedCategory.Module.js",
+			"checkout": "Modules/FeaturedCategoryModule/JavaScript/FeaturedCategory.Module.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/FeaturedCategoryCCT/JavaScript/Button.View.js",
+					"Modules/FeaturedCategoryCCT/JavaScript/FeaturedCategoryCCT.js",
+					"Modules/FeaturedCategoryCCT/JavaScript/Item.View.js",
+					"Modules/FeaturedCategoryCCT/JavaScript/Main.View.js",
+					"ExtensionBundle.js",
+					"Modules/FeaturedCategoryModule/JavaScript/FeaturedCategory.Module.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/FeaturedCategoryCCT/JavaScript/Button.View.js",
+					"Modules/FeaturedCategoryCCT/JavaScript/FeaturedCategoryCCT.js",
+					"Modules/FeaturedCategoryCCT/JavaScript/Item.View.js",
+					"Modules/FeaturedCategoryCCT/JavaScript/Main.View.js",
+					"ExtensionBundle.js",
+					"Modules/FeaturedCategoryModule/JavaScript/FeaturedCategory.Module.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/FeaturedCategoryCCT/JavaScript/Button.View.js",
+					"Modules/FeaturedCategoryCCT/JavaScript/FeaturedCategoryCCT.js",
+					"Modules/FeaturedCategoryCCT/JavaScript/Item.View.js",
+					"Modules/FeaturedCategoryCCT/JavaScript/Main.View.js",
+					"ExtensionBundle.js",
+					"Modules/FeaturedCategoryModule/JavaScript/FeaturedCategory.Module.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Log.js",
+					"Modules/Instrumentation/JavaScript/Instrumentation.Logger.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/FeaturedCategoryModule/SuiteScript/NetSuite.FeaturedCategory.js",
+		"files": [
+			"Modules/FeaturedCategoryModule/SuiteScript/FeaturedCategory.Model.js",
+			"Modules/FeaturedCategoryModule/SuiteScript/NetSuite.FeaturedCategory.js",
+			"Modules/FeaturedCategoryModule/SuiteScript/FeaturedCategory.ServiceController.js"
+		]
+	},
+	"local_folder": "Workspace\\FeaturedCategory",
+	"path": "SuiteBundles/Bundle 269415/extensions/NetSuite/FeaturedCategory@1.1.0",
+	"activation_id": "2",
+	"extension_id": "1001"
+}

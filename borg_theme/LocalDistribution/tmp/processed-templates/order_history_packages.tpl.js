@@ -16,13 +16,13 @@ define('order_history_packages.tpl', ['Handlebars','Handlebars.CompilerNameLooku
     var stack1;
 
   return " "
-    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"orderLocation") : depth0)) != null ? compilerNameLookup(stack1,"name") : stack1), depth0))
+    + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"orderLocation") : depth0)) != null ? compilerNameLookup(stack1,"label") : stack1), depth0))
     + " ";
 },"8":function(container,depth0,helpers,partials,data) {
-    var helper;
+    var stack1;
 
   return "					"
-    + container.escapeExpression(((helper = (helper = compilerNameLookup(helpers,"orderAddress") || (depth0 != null ? compilerNameLookup(depth0,"orderAddress") : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"orderAddress","hash":{},"data":data}) : helper)))
+    + container.escapeExpression(container.lambda(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"shipaddress") : stack1)) != null ? compilerNameLookup(stack1,"company") : stack1), depth0))
     + "\n";
 },"10":function(container,depth0,helpers,partials,data) {
     var stack1;
@@ -83,7 +83,7 @@ define('order_history_packages.tpl', ['Handlebars','Handlebars.CompilerNameLooku
     + alias4(((helper = (helper = compilerNameLookup(helpers,"initiallyCollapsedArrow") || (depth0 != null ? compilerNameLookup(depth0,"initiallyCollapsedArrow") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"initiallyCollapsedArrow","hash":{},"data":data}) : helper)))
     + "\" data-toggle=\"collapse\" data-target=\"#"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"targetId") || (depth0 != null ? compilerNameLookup(depth0,"targetId") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"targetId","hash":{},"data":data}) : helper)))
-    + "\" aria-expanded=\"true\" aria-controls=\"unfulfilled-items\">\n			<div class=\"order-history-packages-header-container-title\">\n				<span class=\"order-history-packages-accordion-head-toggle-status\">"
+    + "\" aria-expanded=\"true\" aria-controls=\"unfulfilled-items\">\n			\n			<div class=\"order-history-packages-header-container-title\">\n				<span class=\"order-history-packages-accordion-head-toggle-status\">"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"packageStatus") || (depth0 != null ? compilerNameLookup(depth0,"packageStatus") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"packageStatus","hash":{},"data":data}) : helper)))
     + "</span>\n				<span class=\"order-history-packages-accordion-head-toggle-auxiliar-text\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isPackageInStore") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data})) != null ? stack1 : "")
@@ -91,7 +91,7 @@ define('order_history_packages.tpl', ['Handlebars','Handlebars.CompilerNameLooku
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isPackageInStore") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.program(8, data, 0),"data":data})) != null ? stack1 : "")
     + "					 <i class=\"order-history-packages-icon-angle-down\"></i>\n				</a>\n				<div class=\"order-history-packages-dropdown-menu\" aria-labelledby=\"order-history-packages-address-dropdown\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isPackageInStore") : depth0),{"name":"if","hash":{},"fn":container.program(10, data, 0),"inverse":container.program(13, data, 0),"data":data})) != null ? stack1 : "")
-    + "				</div>\n			</div>\n			<i class=\"order-history-packages-accordion-toggle-icon\"></i>\n"
+    + "				</div>\n			</div>\n			<!--<i class=\"order-history-packages-accordion-toggle-icon\"></i>-->\n		\n"
     + ((stack1 = compilerNameLookup(helpers,"unless").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isPackageInStore") : depth0),{"name":"unless","hash":{},"fn":container.program(15, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "			<div class=\"order-history-packages-items-quantity\">"
     + alias4((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"$(0) Items",(depth0 != null ? compilerNameLookup(depth0,"linesItemsAmount") : depth0),{"name":"translate","hash":{},"data":data}))
@@ -102,4 +102,4 @@ define('order_history_packages.tpl', ['Handlebars','Handlebars.CompilerNameLooku
     + "\" role=\"tabpanel\" data-target=\"#"
     + alias4(((helper = (helper = compilerNameLookup(helpers,"targetId") || (depth0 != null ? compilerNameLookup(depth0,"targetId") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"targetId","hash":{},"data":data}) : helper)))
     + "\">\n		<div class=\"order-history-packages-accordion-container\" data-content=\"order-items-body\">\n			<table class=\"order-history-packages-items-table\">\n				<tbody data-view=\"Items.Collection\">\n				</tbody>\n			</table>\n		</div>\n	</div>\n</div>\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_history_packages'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_history_packages'; return template;});

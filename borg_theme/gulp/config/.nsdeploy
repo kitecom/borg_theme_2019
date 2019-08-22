@@ -7,7 +7,7 @@
         "hostname": "3976137.restlets.api.netsuite.com",
         "website": "2",
         "roleId": 1064,
-        "domain": "staging.borgandoverstrom.com",
+        "domain": "store.borgandoverstrom.com",
         "webapp_id": "2080861",
         "target_folder": "2080861",
         "is_scis": false

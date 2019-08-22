@@ -1,0 +1,189 @@
+.facets-faceted-navigation-results{
+	padding-top: $sc-padding-lv4;
+	padding-left: $sc-padding-lv3;
+	padding-right: $sc-padding-lv3;
+
+	font-size: $sc-font-size-m;
+
+	@media (min-width: $screen-md-min){
+		display: none;
+	}
+}
+
+.facets-faceted-navigation-title-alt {
+	color: $sc-color-primary;
+}
+.facets-faceted-navigation-item-facet-group,
+.facets-faceted-navigation-facet-group {
+	border-top: 1px solid #efefef;
+	padding: $sc-padding-lv2 $sc-padding-lv3;
+	@media (min-width: $screen-md-min) {
+		padding-left: 0;
+	}
+}
+
+.facets-faceted-navigation-title { 
+	display: none;
+
+	@media (min-width: $screen-md-min) {
+		font-size: $sc-font-size-l;
+		font-weight: $sc-font-weight-semibold;
+		text-align: left;
+		display: block;
+		padding: $sc-padding-lv3;
+		padding-left: 0;
+	}
+}
+
+
+
+.facets-faceted-navigation-facets-clear {
+	@extend .filter-generic;
+
+	width: inherit;
+	font-size: $sc-font-size-xs;
+
+	@media (min-width: $screen-md-min) {
+		position: inherit;
+		display: inline-block;
+	}
+
+	@media (max-width: $screen-sm-max) {
+		margin-left: $sc-padding-lv3;
+	}
+}
+
+.facets-faceted-navigation-facets-clear-icon {
+	@extend .facets-faceted-navigation-facet-option-circle;
+}
+.facets-faceted-navigation-facet-group-expander:hover {
+	text-decoration: none;
+}
+
+.facets-faceted-navigation-facet-group-title {
+	font-size: $sc-font-size-m;
+}
+
+.facets-faceted-navigation-facet-group-expander {
+	display:block;
+	padding: $sc-padding-lv2 0;
+}
+
+.facets-faceted-navigation-facet-group-expander-icon {
+	float: right;
+	color: $sc-color-copy;
+	font-size: $sc-navigation-icon-size;
+	margin-top: -3px;
+	@extend .icon-angle-up;
+	@include transition-transform(300ms ease);
+}
+
+.collapsed .facets-faceted-navigation-facet-group-expander-icon{
+	@include rotate(180deg);
+}
+
+/*  */
+.facets-faceted-navigation-facet-option {
+	@extend .single-select-option;
+}
+
+.facets-faceted-navigation-facet-option-circle {
+	@extend .single-select-icon-close;
+}
+/* */
+
+.facets-faceted-navigation-content .sc-pusher-header{
+	margin:0;
+}
+
+.facets-faceted-navigation-item-color-facet-group-expander,
+.facets-faceted-navigation-item-facet-group-expander {
+	h4::after {
+		font-family: "FontAwesome";
+		content: "\f056";
+		float: right;
+	}
+}
+.facets-faceted-navigation-item-color-facet-group-expander.collapsed,
+.facets-faceted-navigation-item-facet-group-expander.collapsed {
+	h4::after {
+		font-family: "FontAwesome";
+		content: "\f055";
+		float: right;
+	}
+}
+
+.facets-faceted-navigation-item-facet-option,
+.facets-faceted-navigation-item-color-option {
+		font-size:1rem;
+}
+
+.facets-faceted-navigation-item-facet-option::before,
+.facets-faceted-navigation-item-color-option::before {
+		font-family: "FontAwesome";
+		content: "\f10c";
+		margin: 2px 5px 0px 0;
+		font-size: 1.25rem;
+
+}
+.facets-faceted-navigation-item-facet-option.option-active::before {
+		font-family: "FontAwesome";
+		content: "\f05d";
+		margin: 2px 5px 0px 0;
+		font-size: 1.25rem;
+		font-weight: 300;
+}
+
+.facets-faceted-navigation-item-color-facet-group-expander-icon,
+.facets-faceted-navigation-item-facet-group-expander-icon{
+		display: none;
+}
+.facets-faceted-navigation-item-color-option::before {
+		font-family: "FontAwesome";
+    	content: "\f111";
+    	padding: 0;
+    	font-size: 2rem;
+    	border-radius: 4px;
+    	line-height: 1;
+    	font-weight: 300;
+    	&::hover {
+    		content: "\f111";
+    	}
+    	&.active::before {
+    		content: "\f058"!important;
+    	}
+}
+
+.facets-faceted-navigation-item-color-option.colour-Black::before {
+		color: #000;
+}
+.facets-faceted-navigation-item-color-option.colour-Silver::before {
+		color: #c0c0c0;
+}
+.facets-faceted-navigation-item-color-option.colour-Stainless::before {
+		color: #c6c3bf;
+}
+.facets-faceted-navigation-item-color-option.colour-Graphite::before {
+		color: #5e5f5d;
+}
+.facets-faceted-navigation-item-color-option.colour-Dark::before {
+		color: #2e2e2e;
+}
+.facets-faceted-navigation-item-color-option.colour-White::before {
+		/*background-color: #caccce;
+		color: #282828;
+		border: 1px solid #282828;*/
+		color: #ffffff;
+
+}
+/*.facets-faceted-navigation-item-color-option.active::before {
+		content: "\f058"!important;
+		font-weight: 300;
+}*/
+
+.facets-faceted-navigation-item-color-option > span {
+		display: none;
+}
+.facets-faceted-navigation-item-facet-group.custitem_facet_related_accs {
+		display: none;
+}

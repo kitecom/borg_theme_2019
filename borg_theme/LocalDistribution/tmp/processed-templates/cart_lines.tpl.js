@@ -23,24 +23,26 @@ define('cart_lines.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], functio
     + alias1(container.lambda(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"thumbnail") : depth0)) != null ? compilerNameLookup(stack1,"altimagetext") : stack1), depth0))
     + "\">\n";
 },"7":function(container,depth0,helpers,partials,data) {
+    return "matrix";
+},"9":function(container,depth0,helpers,partials,data) {
     var stack1, helper;
 
-  return "			<a "
+  return "					<a "
     + ((stack1 = ((helper = (helper = compilerNameLookup(helpers,"linkAttributes") || (depth0 != null ? compilerNameLookup(depth0,"linkAttributes") : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(depth0 != null ? depth0 : (container.nullContext || {}),{"name":"linkAttributes","hash":{},"data":data}) : helper))) != null ? stack1 : "")
-    + " class=\"cart-lines-name-link\">\n				"
+    + " class=\"cart-lines-name-link\">\n						"
     + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"item") : depth0)) != null ? compilerNameLookup(stack1,"_name") : stack1), depth0))
-    + "\n			</a>\n";
-},"9":function(container,depth0,helpers,partials,data) {
+    + "\n					</a>\n\n";
+},"11":function(container,depth0,helpers,partials,data) {
     var stack1;
 
-  return "				<span class=\"cart-lines-name-viewonly\">"
+  return "						<span class=\"cart-lines-name-viewonly\">"
     + container.escapeExpression(container.lambda(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"item") : depth0)) != null ? compilerNameLookup(stack1,"_name") : stack1), depth0))
     + "</span>\n";
-},"11":function(container,depth0,helpers,partials,data) {
-    return "			<div class=\"cart-lines-summary\" data-view=\"Item.Summary.View\"></div>\n";
 },"13":function(container,depth0,helpers,partials,data) {
-    return "			<div class=\"cart-lines-alert-placeholder\" data-type=\"alert-placeholder\"></div>\n";
+    return "					<div class=\"cart-lines-summary\" data-view=\"Item.Summary.View\"></div>\n";
 },"15":function(container,depth0,helpers,partials,data) {
+    return "			<div class=\"cart-lines-alert-placeholder\" data-type=\"alert-placeholder\"></div>\n";
+},"17":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=container.escapeExpression;
 
   return "			<div class=\"alert alert-"
@@ -57,15 +59,16 @@ define('cart_lines.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], functio
     + alias4(((helper = (helper = compilerNameLookup(helpers,"itemId") || (depth0 != null ? compilerNameLookup(depth0,"itemId") : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"itemId","hash":{},"data":data}) : helper)))
     + "\" data-type=\"order-item\" class=\""
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showGeneralClass") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + " cart-lines-row\">\n	<div class=\"cart-lines-table-first\">\n		<div class=\"cart-lines-thumbnail\">\n"
+    + " cart-lines-row\">\n	<div class=\"cart-lines-table-first\">\n	<div class=\"thumb-wrapper\">\n		<div class=\"cart-lines-thumbnail\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isNavigable") : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.program(5, data, 0),"data":data})) != null ? stack1 : "")
-    + "		</div>\n	</div>\n	<div class=\"cart-lines-table-middle\">\n		<div class=\"cart-lines-name\">\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isNavigable") : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.program(9, data, 0),"data":data})) != null ? stack1 : "")
-    + "		</div>\n		<div class=\"cart-lines-price\">\n			<div data-view=\"Item.Price\"></div>\n		</div>\n		<div data-view=\"Item.Sku\"></div>\n		<div data-view=\"Item.Tax.Info\"></div>\n\n		<div class=\"cart-lines-options\">\n			<div data-view=\"Item.SelectedOptions\"></div>\n		</div>\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showSummaryView") : depth0),{"name":"if","hash":{},"fn":container.program(11, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n		<div data-view=\"StockDescription\"></div>\n\n        <div class=\"cart-lines-item-actions-desktop\" data-view=\"Item.Actions.View\"></div>\n	</div>\n	<div class=\"cart-lines-table-last\">\n		<div class=\"cart-lines-item-actions-mobile\" data-view=\"Item.Actions.View\"></div>\n\n        <div class=\"cart-lines-shipping-method\" data-view=\"CartLines.PickupInStore\"></div>\n\n		<div class=\"cart-lines-stock\" data-view=\"Product.Stock.Info\"></div>\n\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showAlert") : depth0),{"name":"if","hash":{},"fn":container.program(13, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showCustomAlert") : depth0),{"name":"if","hash":{},"fn":container.program(15, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "	</div>\n</div>\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'cart_lines'; return template;});
+    + "		</div>\n	</div>\n	\n	</div>\n	<div class=\"cart-lines-table-middle\">\n		<div class=\"cart-lines-table-middle-one\">\n			<div class=\"cart-lines-name "
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"item") : stack1)) != null ? compilerNameLookup(stack1,"custitem_sca_is_matrix") : stack1),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "\">\n"
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isNavigable") : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.program(11, data, 0),"data":data})) != null ? stack1 : "")
+    + "			</div>\n			\n		</div>\n		<div class=\"cart-lines-table-middle-two\">\n			<div class=\"cart-lines-sku\" data-view=\"Item.Sku\"></div>\n			\n		\n		</div>\n		<div class=\"cart-lines-table-middle-three\">\n			<!--div class=\"cart-lines-tax\" data-view=\"Item.Tax.Info\"></div-->\n"
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showSummaryView") : depth0),{"name":"if","hash":{},"fn":container.program(13, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "		</div>\n		<!--div data-view=\"StockDescription\"></div-->\n		\n	  	\n	</div>\n	<div class=\"cart-lines-table-last\">\n		<!--\n		<div class=\"cart-lines-item-actions-mobile\" data-view=\"Item.Actions.View\"></div>\n        <div class=\"cart-lines-shipping-method\" data-view=\"CartLines.PickupInStore\"></div>\n		\n"
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showAlert") : depth0),{"name":"if","hash":{},"fn":container.program(15, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showCustomAlert") : depth0),{"name":"if","hash":{},"fn":container.program(17, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "		-->\n		<div class=\"cart-lines-stock\" data-view=\"Product.Stock.Info\"></div>\n		<div class=\"cart-lines-price\">\n			<div data-view=\"Item.Price\"></div>\n		</div>\n		<div class=\"cart-lines-options\">\n			<div data-view=\"Item.SelectedOptions\"></div>\n		</div>\n		<!--<div class=\"cart-lines-item-actions-desktop\" data-view=\"Item.Actions.View\"></div>-->\n		<div class=\"cart-lines-item-actions\" data-view=\"Item.Actions.View\"></div>\n			\n	</div>\n</div>\n\n\n\n\n";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'cart_lines'; return template;});

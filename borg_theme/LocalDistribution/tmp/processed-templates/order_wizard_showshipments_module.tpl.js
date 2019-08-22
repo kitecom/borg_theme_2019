@@ -1,13 +1,15 @@
 define('order_wizard_showshipments_module.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"1":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3=container.escapeExpression;
 
-  return "	<section class=\"order-wizard-showshipments-module-shipping-details\">\n		<div class=\"order-wizard-showshipments-module-shipping-details-body\">\n			<h4 class=\"order-wizard-showshipments-module-shipping-title\">\n				"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(alias1,"Ship to $(0)",(depth0 != null ? compilerNameLookup(depth0,"shippingAddress") : depth0),{"name":"translate","hash":{},"data":data}))
+  return "	<section class=\"order-wizard-showshipments-module-shipping-details\">\n		<div class=\"order-wizard-showshipments-module-shipping-details-items\" data-view=\"Items.Collection\"></div>\n		<div class=\"order-wizard-showshipments-module-shipping-details-body\">\n			<h4 class=\"order-wizard-showshipments-module-shipping-title\">\n				"
+    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Shipping Address",{"name":"translate","hash":{},"data":data}))
+    + "\n			</h4>\n			<h4 class=\"order-wizard-showshipments-module-shipping-title\">\n				"
+    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Shipping Method",{"name":"translate","hash":{},"data":data}))
     + "\n			</h4>\n\n			<div class=\"order-wizard-showshipments-module-shipping-details-address\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showShippingAddress") : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.program(4, data, 0),"data":data})) != null ? stack1 : "")
     + "\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showShippingMetod") : depth0),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "			</div>\n			<div class=\"order-wizard-showshipments-module-shipping-details-items\" data-view=\"Items.Collection\"></div>\n		</div>\n	</section>\n";
+    + "			</div>\n			\n		</div>\n	</section>\n";
 },"2":function(container,depth0,helpers,partials,data) {
     return "					<div class=\"order-wizard-showshipments-module-shipping-details-address-view\" data-view=\"Shipping.Address\"></div>\n";
 },"4":function(container,depth0,helpers,partials,data) {
@@ -19,12 +21,10 @@ define('order_wizard_showshipments_module.tpl', ['Handlebars','Handlebars.Compil
     + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Please select a valid shipping address",{"name":"translate","hash":{},"data":data}))
     + "\n					</a>\n";
 },"6":function(container,depth0,helpers,partials,data) {
-    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+    var stack1;
 
-  return "					<div class=\"order-wizard-showshipments-module-shipping-details-method\">\n						<h4 class=\"order-wizard-showshipments-module-shipping-title\">\n							"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(alias1,"Delivery Method",{"name":"translate","hash":{},"data":data}))
-    + "\n						</h4>\n"
-    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showEditButton") : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.program(13, data, 0),"data":data})) != null ? stack1 : "")
+  return "					<div class=\"order-wizard-showshipments-module-shipping-details-method\">\n						\n"
+    + ((stack1 = compilerNameLookup(helpers,"unless").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"showEditButton") : depth0),{"name":"unless","hash":{},"fn":container.program(7, data, 0),"inverse":container.program(13, data, 0),"data":data})) != null ? stack1 : "")
     + "					</div>\n";
 },"7":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
@@ -68,4 +68,4 @@ define('order_wizard_showshipments_module.tpl', ['Handlebars','Handlebars.Compil
 
   return ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"showShippingInformation") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_wizard_showshipments_module'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_wizard_showshipments_module'; return template;});

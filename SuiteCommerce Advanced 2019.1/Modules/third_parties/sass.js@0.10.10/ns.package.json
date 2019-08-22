@@ -1,0 +1,11 @@
+{
+	"gulp": {
+		"javascript": [
+			"dist/sass.js"
+		],
+		"javascript-move": [
+			"dist/sass.worker.js"
+		]
+	}
+,	"jshint": "false"
+}

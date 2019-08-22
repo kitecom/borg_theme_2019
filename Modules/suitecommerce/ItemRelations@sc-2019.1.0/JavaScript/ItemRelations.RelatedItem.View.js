@@ -83,6 +83,8 @@ define(
 				itemURL: this.model.getFullLink()
 				//@property {String} itemName
 			,	itemName: this.model.get('_name') || this.model.Name
+				// @property {String} storedescription
+			,	itemDescription: this.model.get('_storedescription') || this.model.Storedescription
 				// @property {ImageContainer} thumbnail
 			,	thumbnail: this.model.getThumbnail()
 				//@property {String} sku

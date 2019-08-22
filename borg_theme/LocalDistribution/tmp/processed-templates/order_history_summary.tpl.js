@@ -3,9 +3,9 @@ define('order_history_summary.tpl', ['Handlebars','Handlebars.CompilerNameLookup
 
   return "			<p class=\"order-history-summary-summary-grid-float\">\n				<span class=\"order-history-summary-summary-amount-handling\">\n					"
     + alias1(container.lambda(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"handlingcost_formatted") : stack1), depth0))
-    + "\n				</span>\n				"
+    + "\n				</span>\n				<!--"
     + alias1((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Handling Total",{"name":"translate","hash":{},"data":data}))
-    + "\n			</p>\n";
+    + "-->\n				ADR Dangerous Goods Transportation Surcharge\n			</p> \n";
 },"3":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.escapeExpression;
 
@@ -89,9 +89,9 @@ define('order_history_summary.tpl', ['Handlebars','Handlebars.CompilerNameLookup
     + alias2((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Request a Return",{"name":"translate","hash":{},"data":data}))
     + "\n			</a>\n";
 },"24":function(container,depth0,helpers,partials,data) {
-    return "			<a class=\"order-history-summary-button-cancel-order\" data-action=\"cancel\">\n				"
+    return "\n			<a class=\"order-history-summary-button-cancel-order\" data-action=\"cancel\">\n				"
     + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Cancel Purchase",{"name":"translate","hash":{},"data":data}))
-    + "\n			</a>\n";
+    + "\n			</a>\n		";
 },"26":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=container.lambda, alias2=container.escapeExpression;
 
@@ -132,7 +132,7 @@ define('order_history_summary.tpl', ['Handlebars','Handlebars.CompilerNameLookup
     + alias3(alias4(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"total_formatted") : stack1), depth0))
     + "\n				</span>\n				"
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Total",{"name":"translate","hash":{},"data":data}))
-    + "\n			</p>\n		</div>\n	</div>\n\n	<div class=\"order-history-summary-row-fluid\">\n"
+    + "\n			</p>\n		</div>\n		\n\n	</div>\n\n	<div class=\"order-history-summary-row-fluid\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showReorderAllItemsButton") : depth0),{"name":"if","hash":{},"fn":container.program(20, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n		<!-- DOWNLOAD AS PDF -->\n		<a href=\""
     + alias3(((helper = (helper = compilerNameLookup(helpers,"pdfUrl") || (depth0 != null ? compilerNameLookup(depth0,"pdfUrl") : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"pdfUrl","hash":{},"data":data}) : helper)))
@@ -140,9 +140,9 @@ define('order_history_summary.tpl', ['Handlebars','Handlebars.CompilerNameLookup
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Download PDF",{"name":"translate","hash":{},"data":data}))
     + "\n		</a>\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showRequestReturnButton") : depth0),{"name":"if","hash":{},"fn":container.program(22, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n"
+    + "\n		<!--"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showCancelButton") : depth0),{"name":"if","hash":{},"fn":container.program(24, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n"
+    + "-->\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showViewInvoiceButton") : depth0),{"name":"if","hash":{},"fn":container.program(26, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "	</div>\n</div>\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_history_summary'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_history_summary'; return template;});

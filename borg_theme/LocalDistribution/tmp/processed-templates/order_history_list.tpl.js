@@ -4,11 +4,11 @@ define('order_history_list.tpl', ['Handlebars','Handlebars.CompilerNameLookup'],
     + "\n	</a>\n";
 },"3":function(container,depth0,helpers,partials,data) {
     return "				<span class=\"order-history-list-header-button-open-active\">"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Open",{"name":"translate","hash":{},"data":data}))
-    + "</span>					\n";
+    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Open Orders",{"name":"translate","hash":{},"data":data}))
+    + "</span>\n";
 },"5":function(container,depth0,helpers,partials,data) {
     return "				<a href=\"/open-purchases\" class=\"order-history-list-header-button-open\">"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Open",{"name":"translate","hash":{},"data":data}))
+    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Open Orders",{"name":"translate","hash":{},"data":data}))
     + "</a>\n";
 },"7":function(container,depth0,helpers,partials,data) {
     var stack1;
@@ -17,26 +17,26 @@ define('order_history_list.tpl', ['Handlebars','Handlebars.CompilerNameLookup'],
 },"8":function(container,depth0,helpers,partials,data) {
     return "					<span class=\"order-history-list-header-button-instore-active\">"
     + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"In Store",{"name":"translate","hash":{},"data":data}))
-    + "</span>					\n";
+    + "</span>\n";
 },"10":function(container,depth0,helpers,partials,data) {
     return "					<a href=\"/instore-purchases\" class=\"order-history-list-header-button-instore\">"
     + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"In Store",{"name":"translate","hash":{},"data":data}))
     + "</a>\n";
 },"12":function(container,depth0,helpers,partials,data) {
     return "				<span class=\"order-history-list-header-button-all-active\">"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"All",{"name":"translate","hash":{},"data":data}))
-    + "</span>					\n";
+    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"All Orders",{"name":"translate","hash":{},"data":data}))
+    + "</span>\n";
 },"14":function(container,depth0,helpers,partials,data) {
     return "				<a href=\"/purchases\" class=\"order-history-list-header-button-all\">"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"All",{"name":"translate","hash":{},"data":data}))
+    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"All Orders",{"name":"translate","hash":{},"data":data}))
     + "</a>\n";
 },"16":function(container,depth0,helpers,partials,data) {
     return "style=\"display:none;\"";
 },"18":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3=container.escapeExpression;
 
-  return "	<div class=\"order-history-list-recordviews-container\">\n		<table class=\"order-history-list-recordviews-actionable-table\">\n			<thead class=\"order-history-list-recordviews-actionable-header\">\n				<tr>\n					<th class=\"order-history-list-recordviews-actionable-title-header\">\n						<span>"
-    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Purchase No.",{"name":"translate","hash":{},"data":data}))
+  return "	<div class=\"order-history-list-recordviews-container\">\n		<header class=\"order-history-list-header\">\n			<h2>Purchase History</h2>\n		</header>\n		<table class=\"order-history-list-recordviews-actionable-table\">\n			<thead class=\"order-history-list-recordviews-actionable-header\">\n				<tr>\n					<th class=\"order-history-list-recordviews-actionable-title-header\">\n						<span>"
+    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Order No.",{"name":"translate","hash":{},"data":data}))
     + "</span>\n					</th>\n"
     + ((stack1 = compilerNameLookup(helpers,"each").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"columns") : depth0),{"name":"each","hash":{},"fn":container.program(19, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "					<th class=\"order-history-list-recordviews-actionable-actions-header\">\n						<span>"
@@ -63,15 +63,15 @@ define('order_history_list.tpl', ['Handlebars','Handlebars.CompilerNameLookup'],
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
   return "			<div class=\"order-history-list-empty-section\">\n				<h5>"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(alias1,"You don't have any purchases in your account right now.",{"name":"translate","hash":{},"data":data}))
-    + "</h5>\n				\n"
+    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(alias1,"You don't have any orders in your account right now.",{"name":"translate","hash":{},"data":data}))
+    + "</h5>\n\n"
     + ((stack1 = compilerNameLookup(helpers,"unless").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"allIsActive") : depth0),{"name":"unless","hash":{},"fn":container.program(25, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isSCISIntegrationEnabled") : depth0),{"name":"if","hash":{},"fn":container.program(27, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "			</div>\n";
 },"25":function(container,depth0,helpers,partials,data) {
     return "					<p>"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"To see a list of all your past purchases, you can go to the tab <a href=\"/purchases\" class=\"\">All</a>.",{"name":"translate","hash":{},"data":data}))
+    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"To see a list of all your past orders, you can go to the tab <a href=\"/purchases\" class=\"\">All</a>.",{"name":"translate","hash":{},"data":data}))
     + "</p>\n";
 },"27":function(container,depth0,helpers,partials,data) {
     var stack1;
@@ -90,22 +90,20 @@ define('order_history_list.tpl', ['Handlebars','Handlebars.CompilerNameLookup'],
 },"31":function(container,depth0,helpers,partials,data) {
     return "				<div data-view=\"GlobalViews.ShowCurrentPage\"></div>\n";
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
-    var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
 
   return ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showBackToAccount") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "\n<section class=\"order-history-list\">\n	<header class=\"order-history-list-header\">\n		<h2>"
-    + container.escapeExpression(((helper = (helper = compilerNameLookup(helpers,"pageHeader") || (depth0 != null ? compilerNameLookup(depth0,"pageHeader") : depth0)) != null ? helper : helpers.helperMissing),(typeof helper === "function" ? helper.call(alias1,{"name":"pageHeader","hash":{},"data":data}) : helper)))
-    + "</h2>\n	</header>\n\n	\n	<div class=\"order-history-list-header-nav\">\n		<div class=\"order-history-list-header-button-group\">\n"
+    + "\n<section class=\"order-history-list\">\n\n\n\n	<div class=\"order-history-list-header-nav\">\n		<div class=\"order-history-list-header-button-group\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"openIsActive") : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.program(5, data, 0),"data":data})) != null ? stack1 : "")
     + "\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isSCISIntegrationEnabled") : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"allIsActive") : depth0),{"name":"if","hash":{},"fn":container.program(12, data, 0),"inverse":container.program(14, data, 0),"data":data})) != null ? stack1 : "")
-    + "		</div>\n	</div>\n\n	<div data-view=\"ListHeader\" "
+    + "		</div>\n		<div data-view=\"ListHeader\" class=\"listHeader\" "
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"openIsActive") : depth0),{"name":"if","hash":{},"fn":container.program(16, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "></div>\n\n"
+    + "></div>\n	</div>\n\n\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"collectionLengthGreaterThan0") : depth0),{"name":"if","hash":{},"fn":container.program(18, data, 0),"inverse":container.program(21, data, 0),"data":data})) != null ? stack1 : "")
     + "\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showPagination") : depth0),{"name":"if","hash":{},"fn":container.program(30, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "</section>\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_history_list'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_history_list'; return template;});

@@ -1,0 +1,25 @@
+<Bundle>
+  <param>
+    <name>SuiteCommerce Advanced</name>
+    <nslogin></nslogin>
+    <nscompany>QA PSG - 5518440 - SuiteCommerce Advanced 2019.1 Leading</nscompany>
+    <nsaccnt>5518440</nsaccnt>
+    <bundle_id>273660</bundle_id>
+    <qabundle_testfolder_id></qabundle_testfolder_id>
+    <prodcompany>NetSuite Platform Solutions Group - SuiteCommerce Advanced 2019.1 Leading</prodcompany>
+    <prodaccount>5518445</prodaccount>
+    <prodbundle_id>273662</prodbundle_id>
+    <product_name></product_name>
+    <devaccnt>NA</devaccnt>
+    <devbundle_id>NA</devbundle_id>
+    <baselabel>SCA_2019.1</baselabel>
+    <version>2019.1.0</version>
+    <datelabel>2019.04.09</datelabel>
+    <buildno>4</buildno>
+    <scrum>Scrum-PSGECommerce@netsuite.com</scrum>
+    <versioningmode>MINOR</versioningmode>
+    <qabundle_folder_id>NA</qabundle_folder_id>
+    <ci_plans />
+    <ci_automation_accounts></ci_automation_accounts>
+  </param>
+</Bundle>

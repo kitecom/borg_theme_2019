@@ -26,20 +26,20 @@ define('jQuery.ajaxSetup', ['jQuery','underscore','Utils'], function (jQuery,_)
 	jQuery(document).ready(function ()
 	{
 		var $body = jQuery(document.body)
-		,	$loading_icon = jQuery('#loadingIndicator');
+		,	$loading_icon = jQuery('#loadingIndicator2');
 
 		if (!$loading_icon.length && !(SC && SC.ENVIRONMENT && SC.ENVIRONMENT.isTouchEnabled))
 		{
 			// if the icon wasn't there, lets add it and make a reference in the global scope
-			$loading_icon = jQuery('<img/>', {
-				id: 'loadingIndicator'
-			,	'class': 'global-loading-indicator'
-			,	src: _.getThemeAbsoluteUrlOfNonManagedResources('img/ajax-loader.gif')
-			,	css: {
-					zIndex: 9999
-				,	position: 'absolute'
-				}
-			}).hide();
+			$loading_icon = jQuery('<div>'
+			, {
+					id: 'loadingIndicator2'
+			}
+			, '<div>' 
+			, { 
+					id: 'spinner'
+			}
+			, '</div></div>').hide();
 
 			if (!_.result(SC, 'isPageGenerator'))
 			{
@@ -50,10 +50,10 @@ define('jQuery.ajaxSetup', ['jQuery','underscore','Utils'], function (jQuery,_)
 		SC.$loadingIndicator = $loading_icon;
 
 		// loading icon sizes, used for positioning math
-		var icon_height = 16
-		,	icon_width = 16;
+		//var icon_height = 16
+		//,	icon_width = 16;
 
-		$body.on({
+		/*$body.on({
 			// On mouse move, we update the icon's position, even if its not shown
 			mousemove: _.throttle(function (e)
 			{
@@ -79,7 +79,7 @@ define('jQuery.ajaxSetup', ['jQuery','underscore','Utils'], function (jQuery,_)
 
 				$loading_icon.filter(':visible').css(mouse_position);
 			}, 50)
-		});
+		});*/
 	});
 
 	SC.loadingIndicatorShow = function ()
@@ -218,5 +218,7 @@ define('jQuery.ajaxSetup', ['jQuery','underscore','Utils'], function (jQuery,_)
 			};
 		}
 	});
+
+
 
 });

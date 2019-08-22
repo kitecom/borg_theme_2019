@@ -3,7 +3,9 @@ define('header_mini_cart.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], f
 },"3":function(container,depth0,helpers,partials,data) {
     return "		<span class=\"header-mini-cart-summary-cart-ellipsis\"></span>\n";
 },"5":function(container,depth0,helpers,partials,data) {
-    return "				\n";
+    return "				"
+    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"$(0)",(depth0 != null ? compilerNameLookup(depth0,"itemsInCart") : depth0),{"name":"translate","hash":{},"data":data}))
+    + "\n";
 },"7":function(container,depth0,helpers,partials,data) {
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3=container.escapeExpression;
 
@@ -55,9 +57,9 @@ define('header_mini_cart.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], f
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Cart",{"name":"translate","hash":{},"data":data}))
     + "\" data-touchpoint=\""
     + alias3(((helper = (helper = compilerNameLookup(helpers,"cartTouchPoint") || (depth0 != null ? compilerNameLookup(depth0,"cartTouchPoint") : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"cartTouchPoint","hash":{},"data":data}) : helper)))
-    + "\" data-hashtag=\"#cart\" href=\"#\">\n	<!--i class=\"header-mini-cart-menu-cart-icon\"></i-->\n	<span class=\"header-mini-cart-menu-cart-legend\">\n"
+    + "\" data-hashtag=\"#cart\" href=\"#\">\n	<svg id=\"icon-basket\" viewBox=\"0 0 18.77 17\"><path class=\"st0\" d=\"M10.39 6V0h-2v6H0l3.67 11h11.44l3.67-11h-8.39zm3.28 9H5.11L2.77 8H16l-2.33 7z\"></path></svg>\n	<span class=\"header-mini-cart-menu-cart-legend\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isLoading") : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.program(5, data, 0),"data":data})) != null ? stack1 : "")
     + "	</span>\n</a>\n<div class=\"header-mini-cart\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showLines") : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.program(14, data, 0),"data":data})) != null ? stack1 : "")
     + "</div>\n\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'header_mini_cart'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'header_mini_cart'; return template;});

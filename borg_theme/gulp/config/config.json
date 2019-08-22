@@ -20,8 +20,8 @@
         "deploy": "DeployDistribution",
         "extensions_dest_name": "Deploy_Extensions",
         "extmech_parent": "-15",
-        "theme_path": "Workspace/Borg_Base_Theme",
-        "overrides_path": "Workspace/Borg_Base_Theme/Overrides",
+        "theme_path": "Workspace/borg_production_theme",
+        "overrides_path": "Workspace/borg_production_theme/Overrides",
         "extensions_dest": "1508617"
     },
     "application": {},

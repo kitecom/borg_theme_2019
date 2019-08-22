@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+      	"quote.showHyperlink": {
+			    "group": "myAccountApp"
+			  ,  "subtab": "quote"
+			  ,  "type": "boolean"
+			  ,  "title": "Show 'Request a Quote' hyperlink"
+			  ,  "description": "Check this box to enable the Quote hyperlink."
+			  ,  "default": true
+        }
+    ,  "quote.textHyperlink": {
+			    "group": "myAccountApp"
+		    , "subtab": "quote"
+		    , "type": "string"
+		    ,	"title": "Hyperlink text"
+		    ,	"description": "Enter the text you want to use for the Quote hyperlink."
+		    ,	"default": "Request a Quote"
+		  }
+    }
+}

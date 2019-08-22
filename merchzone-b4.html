@@ -1,0 +1,29 @@
+<h2>Associated accesories</h2>
+<% var items_per_row = 4, grid_columns= 12 / items_per_row; %>
+<aside class="merchzone b4">
+      <div class="row-fluid">
+         <% _.each(data.items, function (item, index) { %>
+            <% if ((index % items_per_row) == 0 && index > 0) { %>
+               </div>
+               <div class="row-fluid">
+            <% } %>
+            <div class="span<%= grid_columns %>">
+               <% var item_url = '/'+ item.urlcomponent; %>
+               
+               <div class="item-cell item-cell-grid">
+                  
+                  <a class="merch-thumb" href="<%= item_url %>">
+                     <img src="<%= item.cms.image.url %>" alt="<%= item.cms.image.alt_text %>"  />
+                  </a>
+                  
+                  <h4 class="merch-name">
+                     <a href="<%= item_url %>"><%= item.storedescription %></a>
+                  </h4>
+                  <p class="merch-sku">(<%= item.itemid %>)</p>
+                  <a class="merch-button" href="<%= item_url %>">View Item</a>
+
+               </div>
+            </div>
+         <% }); %>
+      </div>
+   </aside>

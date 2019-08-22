@@ -1,0 +1,19 @@
+.recently-viewed-items {
+	position:relative;
+	h3{
+		margin-bottom:$sc-margin-lv8;
+	}
+	.bx-controls-direction{
+		text-align:right;
+		margin-bottom:$sc-margin-lv8;
+	}
+}
+
+ul.recently-viewed-row-cell {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	li{
+		display:inline-block;
+	}
+}

@@ -6,13 +6,13 @@ define('order_history_details.tpl', ['Handlebars','Handlebars.CompilerNameLookup
     var stack1;
 
   return "		<div class=\"order-history-details-message-warning\">\n			"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"The checkout process of this purchase was not completed. To place order, please <a data-navigation=\"ignore-click\" href=\"$(0)\" >finalize your payment.</a>",((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"paymentevent") : stack1)) != null ? compilerNameLookup(stack1,"redirecturl") : stack1),{"name":"translate","hash":{},"data":data}))
+    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"The checkout process for this order was not completed. To place the order, please <a data-navigation=\"ignore-click\" href=\"$(0)\" >finalize your payment.</a>",((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"paymentevent") : stack1)) != null ? compilerNameLookup(stack1,"redirecturl") : stack1),{"name":"translate","hash":{},"data":data}))
     + "\n		</div>\n";
 },"5":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "					<p class=\"order-history-details-header-purchase-order-number-info\">\n						"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"<span class=\"order-history-details-header-purchase-order-info-purchase-order-number-label\">Purchase Order Number: </span> <span class=\"order-history-details-header-purchase-order-number\">$(0)</span>",((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"purchasenumber") : stack1),{"name":"translate","hash":{},"data":data}))
+    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"<span class=\"order-history-details-header-purchase-order-info-purchase-order-number-label\"><strong>PO#</strong> </span> <span class=\"order-history-details-header-purchase-order-number\">$(0)</span>",((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"purchasenumber") : stack1),{"name":"translate","hash":{},"data":data}))
     + "\n					</p>\n";
 },"7":function(container,depth0,helpers,partials,data) {
     return "				<p class=\"order-history-details-header-quote-info\">\n					"
@@ -28,13 +28,13 @@ define('order_history_details.tpl', ['Handlebars','Handlebars.CompilerNameLookup
     var stack1;
 
   return "								"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Products that don't require shipping ($(0))",((stack1 = (depth0 != null ? compilerNameLookup(depth0,"nonShippableLines") : depth0)) != null ? compilerNameLookup(stack1,"length") : stack1),{"name":"translate","hash":{},"data":data}))
+    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Non Shipping Items ($(0))",((stack1 = (depth0 != null ? compilerNameLookup(depth0,"nonShippableLines") : depth0)) != null ? compilerNameLookup(stack1,"length") : stack1),{"name":"translate","hash":{},"data":data}))
     + "\n";
 },"12":function(container,depth0,helpers,partials,data) {
     var stack1;
 
   return "								"
-    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Product that doesn't require shipping ($(0))",((stack1 = (depth0 != null ? compilerNameLookup(depth0,"nonShippableLines") : depth0)) != null ? compilerNameLookup(stack1,"length") : stack1),{"name":"translate","hash":{},"data":data}))
+    + container.escapeExpression((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Non Shipping Item ($(0))",((stack1 = (depth0 != null ? compilerNameLookup(depth0,"nonShippableLines") : depth0)) != null ? compilerNameLookup(stack1,"length") : stack1),{"name":"translate","hash":{},"data":data}))
     + "\n";
 },"14":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
@@ -58,29 +58,36 @@ define('order_history_details.tpl', ['Handlebars','Handlebars.CompilerNameLookup
     var stack1, helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3=container.escapeExpression, alias4="function", alias5=container.lambda;
 
   return "<a href=\"/purchases\" class=\"order-history-details-back-btn\">"
-    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"&lt; Back to Purchases",{"name":"translate","hash":{},"data":data}))
+    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"&lt; Back to orders",{"name":"translate","hash":{},"data":data}))
     + "</a>\n<section>\n	<header>\n		<h2 class=\"order-history-details-order-title\" data-origin='"
     + alias3(((helper = (helper = compilerNameLookup(helpers,"originName") || (depth0 != null ? compilerNameLookup(depth0,"originName") : depth0)) != null ? helper : alias2),(typeof helper === alias4 ? helper.call(alias1,{"name":"originName","hash":{},"data":data}) : helper)))
     + "'>\n			<span class=\"order-history-details-order-title\">"
     + alias3(((helper = (helper = compilerNameLookup(helpers,"title") || (depth0 != null ? compilerNameLookup(depth0,"title") : depth0)) != null ? helper : alias2),(typeof helper === alias4 ? helper.call(alias1,{"name":"title","hash":{},"data":data}) : helper)))
     + " </span><b> <span class=\"order-history-details-order-number\">"
     + alias3(alias5(((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"tranid") : stack1), depth0))
-    + "</span></b>\n			<span class=\"order-history-details-total-formatted\">\n				"
+    + "</span></b>\n			<span class=\"order-history-details-total-formatted\">\n				Total: "
     + alias3(alias5(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"total_formatted") : stack1), depth0))
     + "\n			</span>\n		</h2>\n	</header>\n\n	<div data-type=\"alert-placeholder\"></div>\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showReturnAuthorizations") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showPaymentEventFail") : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n	<!-- HEADER INFORMATION -->\n	<div class=\"order-history-details-header-information\">\n		<div class=\"order-history-details-header-row\">\n			<div class=\"order-history-details-header-col-left\">\n				<p class=\"order-history-details-header-date-info\">\n					"
-    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"<span class=\"order-history-details-header-date-info-date-label\">Date: </span> <span class=\"order-history-details-header-date\">$(0)</span>",((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"trandate") : stack1),{"name":"translate","hash":{},"data":data}))
-    + "\n				</p>\n"
+    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"<span class=\"order-history-details-header-date-info-date-label\"><strong>Date:</strong> </span> <span class=\"order-history-details-header-date\">$(0)</span>",((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"trandate") : stack1),{"name":"translate","hash":{},"data":data}))
+    + "\n				</p>\n				\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showPurchaseOrderNumber") : depth0),{"name":"if","hash":{},"fn":container.program(5, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
+    + "				<p class=\"order-history-details-header-atp-info\">\n					<strong>Ship Date:</strong>"
+    + alias3(alias5(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"options") : stack1)) != null ? compilerNameLookup(stack1,"custbody_bbs_otif_date") : stack1), depth0))
+    + "\n				</p>\n					<p class=\"order-history-details-header-opb-info\">\n					<strong>Order Placed by:</strong> "
+    + alias3(alias5(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"options") : stack1)) != null ? compilerNameLookup(stack1,"custbody_bbs_order_contact_name") : stack1), depth0))
+    + " "
+    + alias3(alias5(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"options") : stack1)) != null ? compilerNameLookup(stack1,"custbody_cibraised_by") : stack1), depth0))
+    + "\n				</p>\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showQuoteDetail") : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "			</div>\n			<div class=\"order-history-details-header-col-right\">\n				<p class=\"order-history-details-header-status-info\">\n					"
+    + "\n			</div>\n			<div class=\"order-history-details-header-col-right\">\n				<h3 class=\"order-history-details-header-status-info\">\n					"
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"<strong>Status: </strong> <span class=\"order-history-details-header-status\">$(0)</span>",((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"status") : stack1)) != null ? compilerNameLookup(stack1,"name") : stack1),{"name":"translate","hash":{},"data":data}))
-    + "\n				</p>\n			</div>\n			<div class=\"order-history-details-header-amount\">\n				<p class=\"order-history-details-header-amount-info\">\n					"
+    + "\n				</h3>\n			</div>\n		\n			<div class=\"order-history-details-header-amount\">\n				<p class=\"order-history-details-header-amount-info\">\n					"
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"<span class=\"order-history-details-header-amount-info-amount-label\">Amount: </span> <span class=\"order-history-details-header-amount-number\">$(0)</span>",((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"total_formatted") : stack1),{"name":"translate","hash":{},"data":data}))
-    + "\n				</p>\n			</div>\n\n		</div>\n	</div>\n\n	<div class=\"order-history-details-row\">\n		<div class=\"order-history-details-content-col\">\n\n			<div data-view=\"OrderPackages\"></div>\n\n"
+    + "\n				</p>\n			</div>\n		\n		</div>\n	</div>\n\n	<div class=\"order-history-details-row\">\n		<div class=\"order-history-details-content-col\">\n\n			<div data-view=\"OrderPackages\"></div>\n			\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showNonShippableLines") : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n			<!-- PAYMENT INFORMATION -->\n			<div class=\"order-history-details-accordion-divider\">\n				<div class=\"order-history-details-accordion-head\">\n					<a class=\"order-history-details-accordion-head-toggle-secondary collapsed\" data-toggle=\"collapse\" data-target=\"#order-payment-info\" aria-expanded=\"true\" aria-controls=\"order-payment-info\">"
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Payment Information",{"name":"translate","hash":{},"data":data}))
@@ -89,4 +96,4 @@ define('order_history_details.tpl', ['Handlebars','Handlebars.CompilerNameLookup
     + "\n\n						<div class=\"order-history-details-payment\" data-view=\"Payments\"></div>\n\n						<div class=\"order-history-details-payment-others\" data-view=\"OtherPayments\"></div>\n\n					</div>\n				</div>\n			</div>\n\n			<!-- PAYMENT INFORMATION ENDS -->\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showReturnAuthorizations") : depth0),{"name":"if","hash":{},"fn":container.program(17, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "		</div>\n\n		<!-- SUMMARY -->\n		<div class=\"order-history-details-summary\" data-view=\"Summary\"></div>\n		<!-- SUMMARY ENDS -->\n	</div>\n</section>\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_history_details'; return template;});
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_history_details'; return template;});

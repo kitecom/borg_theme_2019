@@ -1,0 +1,30 @@
+.login-register-header{
+	@extend .row;
+	margin-bottom: $sc-margin-lv4;
+}
+
+.login-register-title{
+	@extend .col-xs-12;
+}
+
+.login-register-body{
+	@extend .row;
+}
+
+.login-register-body-colored{
+	@extend .login-register-body;
+	padding: 10px 0;
+}
+
+.login-register-wrapper-column-login,
+.login-register-wrapper-column-register{
+	@extend .col-xs-12;
+	@extend .col-sm-6;
+	margin: 0 auto;
+	float: none;
+}
+
+.login-register-wrapper-login,
+.login-register-wrapper-register{
+	@extend .box-column;
+}

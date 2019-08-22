@@ -1,0 +1,15 @@
+.order-wizard-address-row{
+    @extend .row;
+    display: flex;
+    flex-flow: row nowrap;
+    > div {
+    	flex-basis: 33%;
+    	padding: 10px;
+    	> div:hover {
+    		background: #282828;
+            *{
+                color: #fff;
+            }
+    	}
+    }
+}

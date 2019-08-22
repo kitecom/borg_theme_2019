@@ -1,0 +1,149 @@
+.cart-detailed-view-header {
+	padding: 40px 0 0 0;
+}
+.cart-lines-name{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.cart-lines-name-link{
+	@extend .medium-title-navigable;
+}
+
+.cart-lines-name-viewonly{
+	@extend .medium-title-viewonly;
+}
+
+.cart-lines-thumbnail{
+	img{
+		width:$img-larger;
+	}
+}
+.cart-lines-price{
+	margin-bottom:$sc-margin-lv2;
+}
+
+.cart-lines-price .transaction-line-views-price-lead{
+	@extend .middle-price;
+}
+
+.cart-lines-options{
+	.cart-option{
+		font-size:$sc-font-size-m;
+	}
+}
+
+.cart-lines-row {
+	@extend .row;
+	    margin-bottom: 20px;
+	    background: #fff;
+	    padding-top: 0;
+	    margin-right: 0px;
+	    margin-left: 0px;
+	    display: flex;
+    	flex-flow: row nowrap;
+	}
+.cart-lines-table-first,
+.cart-lines-table-middle,
+.cart-lines-table-last {
+	display: flex;
+    flex-flow: column nowrap;
+    flex-basis: auto;
+    align-items: flex-start;
+    padding: 10px 10px 10px 20px;
+}
+
+.cart-lines-table-first {
+	@extend .col-xs-4;
+	@extend .col-lg-3;
+	flex: 1;
+	background-color: #000;
+	.thumb-wrapper {
+		align-self: middle;
+	}
+}
+
+.cart-lines-table-middle {
+	@extend .col-xs-8;
+	@extend .col-lg-5;
+	flex:2;
+}
+
+.cart-lines-table-last {
+	@extend .col-xs-12;
+	@extend .col-lg-4;
+	flex: 1;
+}
+
+.cart-lines-alert-placeholder {
+	margin:$sc-margin-lv2 0;
+}
+
+.cart-lines-shipping-method {
+	margin-top: $sc-margin-lv3;
+}
+
+.cart-lines-item-actions-desktop {
+	@media (max-width: $screen-md-max) {
+		display: none;
+	}
+}
+
+.cart-lines-item-actions-mobile {
+	@media (min-width: $screen-lg-min) {
+		display: none;
+	}
+}
+
+.cart-lines-table-middle {
+	display: flex;
+	flex-flow: column nowrap;
+	> div {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	&-one > div {
+		.cart-lines-name-link {
+			font-size: 1.6rem;
+		}
+	}
+	&-two {
+		.cart-lines-shu {
+			flex-basis: 50%;
+		}
+		.transaction-line-views-price-exact {
+			flex-basis: 50%;
+			float: right;
+			.transaction-line-views-price-lead {
+				font-size: 1.5rem;
+			    display: inline-block; 
+			    margin-top: 10px;
+			}
+		}
+	}
+	&-three {
+		display: flex;
+    	flex-flow: row wrap!important;
+    	flex-basis: 100%;
+	}
+
+}
+.cart-lines-table-last {
+	align-items: flex-end;
+	.transaction-line-views-price{
+		margin: 0;
+	}
+	.transaction-line-views-price-lead {
+		font-size: 1.6rem;
+	}
+}
+.cart-item-summary-item-list-actionable-input-qty {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 150px;
+	button{
+		width: 40px;
+	}
+	input {
+		width: 70px!important;
+	}
+}

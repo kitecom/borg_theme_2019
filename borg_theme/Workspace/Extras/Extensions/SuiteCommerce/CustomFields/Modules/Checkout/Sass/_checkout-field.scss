@@ -1,0 +1,37 @@
+.custom-fields-checkout-field {
+  margin-top: $sc-margin-lv2;
+}
+
+// Labels
+
+.custom-fields-checkout-field-label-required {
+  @extend .input-required;
+}
+
+// Checkbox
+
+.custom-fields-checkout-field-label-checkbox {
+  @extend .custom-fields-checkout-field-label !optional;
+  @extend .custom-fields-checkout-field-input !optional;
+  @extend .checkbox;
+  font-weight: $sc-font-weight-normal;
+}
+
+// Text Area, Date & Text
+
+.custom-fields-checkout-field-input-textarea {
+  @extend .custom-fields-checkout-field-input !optional;
+  width: 100%;
+  &:disabled {
+    border-color: $sc-color-theme-border-light;
+    background-color: $sc-color-theme-background;
+  }
+}
+.custom-fields-checkout-field-input-text {
+  @extend .custom-fields-checkout-field-input !optional;
+  @extend .input-large;
+}
+.custom-fields-checkout-field-input-date {
+  @extend .custom-fields-checkout-field-input !optional;
+  @extend .input-large;
+}

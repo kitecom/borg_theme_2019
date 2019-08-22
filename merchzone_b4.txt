@@ -1,0 +1,23 @@
+<% var items_per_row = 4, grid_columns= 12 / items_per_row; %>
+<aside class="b4">
+      <div class="row-fluid">
+         <% _.each(data.items, function (item, index) { %>
+            <% if ((index % items_per_row) == 0 && index > 0) { %>
+               </div>
+               <div class="row-fluid">
+            <% } %>
+            <div class="span<%= grid_columns %>">
+               <% var item_url = '/'+ item.urlcomponent; %>
+               <div class="item-cell item-cell-grid">
+                  <a class="thumbnail" href="<%= item_url %>">
+                     <img src="<%= item.cms.image.url %>" alt="<%= item.cms.image.alt_text %>"  />
+                  </a>
+                  <h5>
+                     <a href="<%= item_url %>"><%= item.name %></a>
+                  </h5>
+                  <a class="btn btn-small btn-primary btn-expanded" href="<%= item_url %>">See more</a>
+               </div>
+            </div>
+         <% }); %>
+      </div>
+   </aside>

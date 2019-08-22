@@ -113,7 +113,7 @@
 			var ie_css_files = app_includes.checkout.ie;
 			for(var i=0; i < ie_css_files.length; i++)
 			{
-		%><link rel="stylesheet" href="<%= ROOT %><%= ie_css_files[i] %>?t=1557751001374">
+		%><link rel="stylesheet" href="<%= ROOT %><%= ie_css_files[i] %>?t=1566226288912">
 		<%
 			}
 		%>
@@ -247,12 +247,12 @@ var SC = window.SC = {
 };
 				SC.isDevelopment = true;
 
-				var load_environment = loadJSON('<%= session.getAbsoluteUrl2("services/CheckoutEnvironment.Service.ss?" + environmentParameters.join("&") ) %>&t=1557751001374', 'checkoutEnvironment');
+				var load_environment = loadJSON('<%= session.getAbsoluteUrl2("services/CheckoutEnvironment.Service.ss?" + environmentParameters.join("&") ) %>&t=1566226288912', 'checkoutEnvironment');
 				load_environment.done(function(env){
 					merge(SC, env);
 					SC.ENVIRONMENT.isTouchEnabled = ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch;
 					document.documentElement.className = (SC.ENVIRONMENT.isTouchEnabled) ? 'touch' : 'no-touch';
-					loadScript('<%=session.getAbsoluteUrl2("languages")%>/checkout_' + SC.ENVIRONMENT.currentLanguage.locale + '.js?t=1557751001374');
+					loadScript('<%=session.getAbsoluteUrl2("languages")%>/checkout_' + SC.ENVIRONMENT.currentLanguage.locale + '.js?t=1566226288912');
 				});
 
 
@@ -318,7 +318,7 @@ var SC = window.SC = {
 		<% } %>
 
 
-		<script type="text/javascript" src="<%= session.getAbsoluteUrl2("languages/checkout_" + Language + ".js") %>?t=1557751001374" ></script>
+		<script type="text/javascript" src="<%= session.getAbsoluteUrl2("languages/checkout_" + Language + ".js") %>?t=1566226288912" ></script>
 
 <script type="text/javascript">
 <%
@@ -329,14 +329,14 @@ var SC = window.SC = {
 
     var isExtended = !!<%= isExtended %>
     ,	local_dependencies = {
-            css: '<%= session.getAbsoluteUrl2(app_includes.checkout.css[0])%>?t=1557751001374'
-        ,	templates: '<%= session.getAbsoluteUrl2(app_includes.checkout.templates[0])%>?t=1557751001374'
-        ,	js_core: '<%= session.getAbsoluteUrl2(core_js[0]) %>?t=1557751001374'
+            css: '<%= session.getAbsoluteUrl2(app_includes.checkout.css[0])%>?t=1566226288912'
+        ,	templates: '<%= session.getAbsoluteUrl2(app_includes.checkout.templates[0])%>?t=1566226288912'
+        ,	js_core: '<%= session.getAbsoluteUrl2(core_js[0]) %>?t=1566226288912'
         };
 
     if(isExtended)
     {
-        local_dependencies.js_extensions = '<%= session.getAbsoluteUrl2(extensions_js)%>?t=1557751001374';
+        local_dependencies.js_extensions = '<%= session.getAbsoluteUrl2(extensions_js)%>?t=1566226288912';
     }
 
     if(!SC.isPageGenerator())

@@ -37,9 +37,9 @@ define('order_wizard_cart_summary.tpl', ['Handlebars','Handlebars.CompilerNameLo
 
   return "				<p class=\"order-wizard-cart-summary-grid-float\">\n					<span class=\"order-wizard-cart-summary-handling-cost-formatted\">\n						"
     + alias1(container.lambda(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"handlingcost_formatted") : stack1), depth0))
-    + "\n					</span>\n					"
+    + "\n					</span>\n					<!--"
     + alias1((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || helpers.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Handling",{"name":"translate","hash":{},"data":data}))
-    + "\n				</p>\n";
+    + "-->\n					ADR Dangerous Goods Surcharge - CO2\n				</p>\n";
 },"15":function(container,depth0,helpers,partials,data) {
     var alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3=container.escapeExpression;
 
@@ -73,17 +73,15 @@ define('order_wizard_cart_summary.tpl', ['Handlebars','Handlebars.CompilerNameLo
 },"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3=container.escapeExpression, alias4=container.lambda;
 
-  return "<div class=\"order-wizard-cart-summary-container\">\n	<h3 class=\"order-wizard-cart-summary-title\">\n		"
-    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Summary",{"name":"translate","hash":{},"data":data}))
-    + "\n	</h3>\n\n	<div class=\"order-wizard-cart-summary-body\">\n"
+  return "<div class=\"order-wizard-cart-summary-container\" id=\"summary\">\n	<h3 class=\"order-wizard-cart-summary-title\">\n		"
+    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Order Summary",{"name":"translate","hash":{},"data":data}))
+    + "\n	</h3>\n	\n	<div class=\"order-wizard-cart-summary-body\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showEditCartMST") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "		<div class=\"order-wizard-cart-summary-subtotal\">\n			<p class=\"order-wizard-cart-summary-grid-float\">\n				<span class=\"order-wizard-cart-summary-grid-right\" >\n					"
     + alias3(alias4(((stack1 = ((stack1 = (depth0 != null ? compilerNameLookup(depth0,"model") : depth0)) != null ? compilerNameLookup(stack1,"summary") : stack1)) != null ? compilerNameLookup(stack1,"subtotal_formatted") : stack1), depth0))
     + "\n				</span>\n				<span class=\"order-wizard-cart-summary-subtotal-label\">\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"itemCountGreaterThan1") : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.program(5, data, 0),"data":data})) != null ? stack1 : "")
-    + "					<p class=\"order-wizard-cart-summary-subtotal-legend\">"
-    + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Subtotal does not include shipping or tax",{"name":"translate","hash":{},"data":data}))
-    + "</p>\n				</span>\n			</p>\n		</div>\n\n		<div class=\"order-wizard-cart-summary-promocode-applied\">\n			<div data-view=\"CartPromocodeListView\"></div>\n		</div>\n\n"
+    + "					\n				</span>\n			</p>\n		</div>\n\n		<div class=\"order-wizard-cart-summary-promocode-applied\">\n			<div data-view=\"CartPromocodeListView\"></div>\n		</div>\n\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showDiscount") : depth0),{"name":"if","hash":{},"fn":container.program(7, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
     + "\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showGiftCertificates") : depth0),{"name":"if","hash":{},"fn":container.program(9, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
@@ -103,5 +101,5 @@ define('order_wizard_cart_summary.tpl', ['Handlebars','Handlebars.CompilerNameLo
     + alias3((compilerNameLookup(helpers,"translate") || (depth0 && compilerNameLookup(depth0,"translate")) || alias2).call(alias1,"Total",{"name":"translate","hash":{},"data":data}))
     + "\n			</p>\n		</div>\n"
     + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"showWarningMessage") : depth0),{"name":"if","hash":{},"fn":container.program(21, data, 0),"inverse":container.noop,"data":data})) != null ? stack1 : "")
-    + "	</div>\n	<div data-cms-area=\"order_wizard_cart_summary_cms_area_1\" data-cms-area-filters=\"page_type\"></div>\n</div>\n\n\n\n\n";
-},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/Borg_Base_Theme/19.1.0/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_wizard_cart_summary'; return template;});
+    + "	</div>\n	<div data-cms-area=\"order_wizard_cart_summary_cms_area_1\" data-cms-area-filters=\"page_type\"></div>\n</div>\n\n<!-- <script type=\"text/javascript\" src=\"https://store.borgandoverstrom.com/site/js/jquery.sticky-kit.min.js\"></script>\n<script type=\"text/javascript\">\n	$(\"#summary\").stick_in_parent();\n\n</script> -->\n\n";
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/Borg/borg_production_theme/19.1.2/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'order_wizard_cart_summary'; return template;});
