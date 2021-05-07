@@ -50,7 +50,7 @@
         "prettier-eslint-gallery": "0.1.5",
         "gulp-ttf2woff2": "2.0.2",
         "gulp-uglify": "3.0.1",
-        "handlebars": "4.0.12",
+        "handlebars": "4.7.7",
         "inquirer": "6.2.1",
         "is-my-json-valid": "2.19.0",
         "istanbul-api": "2.0.6",
