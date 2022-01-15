@@ -70,7 +70,7 @@
         "q": "1.5.1",
         "request": "2.88.0",
         "serve-index": "1.9.1",
-        "shelljs": "0.8.3",
+        "shelljs": "0.8.5",
         "suitetalk": "file:./ns_npm_repository/suitetalk4node",
         "through": "2.3.8",
         "through2": "3.0.0",
