@@ -47,7 +47,7 @@
         "q": "1.5.1",
         "request-promise": "4.2.2",
         "requirejs": "2.3.6",
-        "shelljs": "0.8.3",
+        "shelljs": "0.8.5",
         "suitetalk": "file:./ns_npm_repository/suitetalk4node",
         "through": "2.3.8",
         "through2": "3.0.0",
