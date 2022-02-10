@@ -62,7 +62,7 @@
         "jsonpath-plus": "0.18.0",
         "map-stream": "0.0.7",
         "mime": "2.4.0",
-        "node-sass": "4.11.0",
+        "node-sass": "7.0.0",
         "ns-uploader": "file:./ns_npm_repository/ns-uploader",
         "plugin-error": "1.0.1",
         "preconditions": "file:./ns_npm_repository/preconditions",
