@@ -13,7 +13,7 @@
     "dependencies": {
         "ansi-colors": "3.2.3",
         "archiver": "3.0.0",
-        "async": "2.6.1",
+        "async": "2.6.4",
         "beeper": "1.1.1",
         "bignumber.js": "^2.4.0",
         "cli-spinner": "0.2.8",
